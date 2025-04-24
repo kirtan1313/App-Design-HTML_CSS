@@ -1,0 +1,399 @@
+@media (max-width: 575px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 0 !important;
+        padding: 10px;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .toggle-btn {
+        width: 80px;
+        height: 30px;
+    }
+
+    .toggle-btn .round-btn {
+        width: 32px;
+        height: 32px;
+        top: 42%;
+        left: 0;
+    }
+
+    .toggle-btn.active .round-btn {
+        left: 48px;
+    }
+
+    .category-tab .nav {
+        flex-wrap: nowrap;
+    }
+
+    .menu-screen {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        padding: 10px 10px !important;
+    }
+
+    .header-logo img {
+        width: 50px;
+    }
+
+    .banner-section {
+        display: none;
+    }
+
+    .top-app .tab-content {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .custome-gap {
+        gap: 5px !important;
+    }
+    .popular-heading::before,.popular-heading::after{
+        width: 23%;
+    }
+    .card-wraper{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .card-main{
+        margin-bottom: 15px;
+    }
+    .icon img {
+        width: 150px;
+    }
+    .footer-wraper{
+        flex-wrap: wrap;
+    }
+    .pages-content{
+        padding-top: 20px;
+    }
+    .page-container {
+        padding: 0 20px;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+    .small-size-img img{
+        width: 80px;
+        height: 80px;
+    }
+    .install-heading{
+        font-size: 30px;
+    }
+    .about-text{
+        padding-top: 13px;
+    }
+    .data-safety-box{
+        margin-top: 25px;
+    }
+    .review-nav{
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+    .review-rating-section .nav{
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+    }
+    .review-rating-section .nav-item{
+        margin-bottom: 12px;
+    }
+    .review-rate .review-star{
+        display: flex;
+    }
+    .review-lakh{
+        padding-top: 10px;
+    }
+    .offcanvas.offcanvas-start{
+        width: 250px;
+    }
+    .footer-nav-wrap{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 0 !important;
+        padding: 10px;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .offcanvas {
+        width: 100%; 
+    }
+    .search-input {
+        display: none;
+    }
+
+    .toggle-btn {
+        width: 80px;
+        height: 40px;
+    }
+
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+    .banner-section {
+        display: none;
+    }
+
+    .menu-screen {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        padding: 10px 10px !important;
+    }
+
+    .header-logo img {
+        width: 80px;
+    }
+
+    .top-app .tab-content {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .custome-gap {
+        gap: 5px !important;
+    }
+    .popular-heading::before,.popular-heading::after{
+        width: 30%;
+    }
+    .card-wraper{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .card-main{
+        margin-bottom: 15px;
+    }
+    .icon img {
+        width: 200px;
+    }
+    .footer-wraper{
+        flex-wrap: wrap;
+    }
+    .pages-content{
+        padding-top: 20px;
+    }
+    .page-container {
+        padding: 0 20px;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+    .small-size-img img{
+        width: 80px;
+        height: 80px;
+    }
+    .install-heading{
+        font-size: 30px;
+    }
+    .about-text{
+        padding-top: 13px;
+    }
+    .data-safety-box{
+        margin-top: 25px;
+    }
+    .review-rating-section .tab-content{
+        padding-top: 15px;
+    }
+    .offcanvas.offcanvas-start{
+        width: 250px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .toggle-btn {
+        width: 80px;
+        height: 40px;
+    }
+
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+    .menu-screen {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        padding: 10px 10px !important;
+    }
+
+    .container {
+        margin: 0 !important;
+        padding: 10px 20px;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .banner-section {
+        display: none;
+    }
+
+    .dec {
+        padding: 5px 0;
+    }
+
+    .custome-gap {
+        gap: 5px !important;
+    }
+    .popular-heading::before,.popular-heading::after{
+        width: 35%;
+    }
+    .icon img {
+        width: 200px;
+    }
+    .card-main{
+        width: 250px;
+        height: 410px;
+    }
+    .card-wraper{
+        gap: 10px;
+    }
+    .footer-wraper{
+        flex-wrap: wrap;
+    }
+    .pages-content{
+        padding-top: 20px;
+    }
+    .page-container {
+        padding: 0 20px;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+    .small-size-img img{
+        width: 120px;
+        height: 120px;
+    }
+    .install-heading{
+        font-size: 40px;
+    }
+    .about-text{
+        padding-top: 13px;
+    }
+    .data-safety-box{
+        margin-top: 25px;
+    }
+    .review-rating-section .tab-content{
+        padding-top: 15px;
+    }
+    .offcanvas.offcanvas-start{
+        width: 280px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+    .menu-screen {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        padding: 10px 10px !important;
+    }
+  
+    .hastag-app{
+        flex-wrap: wrap;
+    }
+    .banner-section {
+        display: block;
+    }
+    .popular-heading::before,.popular-heading::after{
+        width: 36%;
+    }
+    .icon img {
+        width: 200px;
+    }
+    .card-main{
+        width: 250px;
+        height: 445px;
+    }
+    .card-wraper{
+        gap: 10px;
+    }
+    .footer-wraper{
+        flex-wrap: wrap;
+    }
+    .pages-content{
+        padding-top: 20px;
+    }
+    .install-heading{
+        font-size: 40px;
+    }
+    .about-text{
+        padding-top: 13px;
+    }
+    .data-safety-box{
+        margin-top: 25px;
+    }
+    .carousel-control-prev {
+        left: 70% !important;
+    }
+    .carousel-inner{
+        padding-top: 20px;
+    }
+    .offcanvas.offcanvas-start{
+        width: 310px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .card-main{
+        width: 350px;
+        height: 460px;
+    }
+    .card-wraper{
+        gap: 10px;
+    }
+    .carousel-control-prev {
+        left: 76% !important;
+    }
+    .carousel-inner{
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .carousel-control-prev {
+        left: 81% !important;
+    }
+}

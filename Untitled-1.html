@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="header-main px-md-5 px-3 py-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="header-logo">
+                    <img src="./assets/Img/logo.png" width="60px" alt="">
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <div class="toggle-btn active">
+                        <input type="checkbox" id="theme-toggle" checked class="cb-value" />
+                        <span class="round-btn"></span>
+                    </div>
+                    <div class="search-input position-relative">
+                        <input type="search" class="text-white" placeholder="search app">
+                        <button class="position-absolute search-button"><i
+                                class="fa-solid fa-magnifying-glass font-18"></i></button>
+                    </div>
+                    <div class="profile-manu">
+                        <nav>
+                            <div class="menu-toggle"></div>
+                            <div class="profile">
+                                <div class="user">
+                                    <h3 class="">Katherine Cooper</h3>
+                                    <p class="m-0 pt-2 ">@probablykat66</p>
+                                </div>
+                                <div class="img-box">
+                                    <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <ul class="p-0">
+                                    <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-5">
+        <div class="px-5">
+            <div class="category-tab">
+                <div class="d-flex align-items-center gap-4">
+                    <button class="text-white category-btn d-flex align-items-center gap-3 py-2 px-4"><i
+                            class="fa-solid fa-bars font-22 "></i>More Category</button>
+                    <ul class="nav nav-tabs border-0 gap-3" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Phone-tab" data-bs-toggle="tab" data-bs-target="#Phone"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-mobile-screen"></i>Phone
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Tablet-tab" data-bs-toggle="tab" data-bs-target="#Tablet"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-tablet-screen-button"></i>Tablet
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="TV-tab" data-bs-toggle="tab" data-bs-target="#TV" type="button"
+                                role="tab">
+                                <i class="fa-solid fa-tv"></i>TV
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Chromebook-tab" data-bs-toggle="tab"
+                                data-bs-target="#Chromebook" type="button" role="tab">
+                                <i class="fa-solid fa-tv"></i>Chromebook
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Watch-tab" data-bs-toggle="tab" data-bs-target="#Watch"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-tv"></i>Watch
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Car-tab" data-bs-toggle="tab" data-bs-target="#Car"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-tv"></i>Car
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-5">
+            <div class="slider-main gap-3">
+
+                <!-- Top Navigation Slider -->
+                <div class="slider-nav slider-nav-top w-100">
+                    <div data-id="1">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/dvd_logo.svg" style="width: 60px;" alt="Slide 1">
+                            <div>
+                                <p class="m-0 text-white font-14">DVD Player</p>
+                                <p class="m-0 text-white font-14">Video Player and NAS streaming player</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="2">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/artRage_vitae.svg" style="width: 60px;" alt="Slide 2">
+                            <div>
+                                <p class="m-0 text-white font-14">ArtRage Vitae</p>
+                                <p class="m-0 text-white font-14">amazingly natural painting ArtRage workspace.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="3">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/Microsoft_logo.svg" style="width: 60px;" alt="Slide 3">
+                            <div>
+                                <p class="m-0 text-white font-14">Microsoft 365 Personal</p>
+                                <p class="m-0 text-white font-14">Microsoft includes 1 TB of cloud storage
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="4">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/spotify.svg" style="width: 60px;" alt="Slide 4">
+                            <div>
+                                <p class="m-0 text-white font-14">Spotify</p>
+                                <p class="m-0 text-white font-14">Play your favorite songs, podcasts and albums on
+                                    Windows with Spotify.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="4">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/amazon_misoc.svg" style="width: 60px;" alt="Slide 4">
+                            <div>
+                                <p class="m-0 text-white font-14">Amazon Music</p>
+                                <p class="m-0 text-white font-14">get unlimited access with Amazon Music Unlimited and
+                                    play any song</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Slider -->
+                <div class="slider-for">
+                    <div data-id="1">
+                        <img class="image-shadow" src="./assets/Img/dvd-banner.png" alt="Slide 1">
+                        <div class="details-content">
+                            <h3 class="text-white">DVD Player</h3>
+                            <p class="text-white pt-3">Nero DVD player is absolutely fantastic for beginners. It can
+                                play any unique DVD format perfectly.
+                            </p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="2">
+                        <img class="image-shadow" src="./assets/Img/artRage_vitae.png" alt="Slide 2">
+                        <div class="details-content">
+                            <h3 class="text-white">ArtRage Vitae</h3>
+                            <p class="text-white pt-3">ArtRage Vitae is the newest edition of the amazingly realistic
+                                natural painting ArtRage workspace.
+                            </p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="3">
+                        <img class="image-shadow" src="./assets/Img/Microsoft.png" alt="Slide 3">
+                        <div class="details-content">
+                            <h3 class="text-white">Microsoft 365 Personal</h3>
+                            <p class="text-white pt-3">Microsoft 365 Personal includes 1 TB of cloud storage, advanced
+                                security, and innovative apps with AI.
+                            </p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="4">
+                        <img class="image-shadow" src="./assets/Img/spotify.png" alt="Slide 4">
+                        <div class="details-content">
+                            <h3 class="text-white">Spotify - Music and Podcasts</h3>
+                            <p class="text-white pt-3">Stream the tracks you love instantly, browse the charts or fire
+                                up curated playlists in every genre and mood. Discover new music too, with awesome
+                                playlists built just for you.
+                            </p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="5">
+                        <img class="image-shadow" src="./assets/Img/dolby_access.png" alt="Slide 5">
+                        <div class="details-content">
+                            <h3 class="text-white">Amazon Music</h3>
+                            <p class="text-white pt-3">We're changing the way you discover and play the music you love. Listen free to music with ads—no credit card required. Prime members can enjoy all the music ad-free.
+                            </p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="6">
+                        <img class="image-shadow" src="./assets/Img/messagener.png" alt="Slide 6">
+                        <div class="details-content">
+                            <h3 class="text-white">Dolby Access</h3>
+                            <p class="text-white pt-3">Dolby Access also allows you to personalize your audio with custom profiles and discover exclusive game trailers and content.</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="7">
+                        <img class="image-shadow" src="./assets/Img/printrest.png" alt="Slide 7">
+                        <div class="details-content">
+                            <h3 class="text-white">Messenger</h3>
+                            <p class="text-white pt-3">
+                                Messenger is a free messaging app that helps you
+                                connect with anyone, anywhere.</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="8">
+                        <img class="image-shadow" src="./assets/Img/printrest.png" alt="Slide 7">
+                        <div class="details-content">
+                            <h3 class="text-white">Pinterest</h3>
+                            <p class="text-white pt-3">
+                                Discover billions of possibilities for every part of your life, from new recipes to creative home design ideas. Create extra home storage space, find your new favorite recipe, or get tattoo inspiration on Pinterest.</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="9">
+                        <img class="image-shadow" src="./assets/Img/twitter.png" alt="Slide 8">
+                        <div class="details-content">
+                            <h3 class="text-white">Twitter</h3>
+                            <p class="text-white pt-3">
+                                From breaking news and entertainment to sports, politics, and everyday interests, when it happens in the world, it happens on Twitter first. See all sides of the story. Join the conversation. Twitter is what's happening in the world and what people are talking about right now.</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="8">
+                        <img class="image-shadow" src="./assets/Img/hdr.png" alt="Slide 8">
+                        <div class="details-content">
+                            <h3 class="text-white">Irix HDR Classic Pro - AI photo editor</h3>
+                            <p class="text-white pt-3">
+                                Irix Pro HDR Classic brings true to life HDR photo editing offering one click edits to full scale pro editing toolset with a highly cognitive user interface (UI).</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Navigation Slider -->
+                <div class="slider-nav slider-nav-bottom w-100">
+                    <div data-id="5">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/dolby_access.svg" style="width: 60px;" alt="Slide 5">
+                            <div>
+                                <p class="m-0 text-white font-14">Dolby Access</p>
+                                <p class="m-0 text-white font-14">Experience the latest popular Dolby Atmos titles such
+                                    as Psychonauts 2, Gears 5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="6">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/messagener.svg" style="width: 60px;" alt="Slide 6">
+                            <div>
+                                <p class="m-0 text-white font-14">Messenger</p>
+                                <p class="m-0 text-white font-14">Messenger is a free messaging app that helps you
+                                    connect with anyone, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="7">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/printrest.svg" style="width: 60px;" alt="Slide 7">
+                            <div>
+                                <p class="m-0 text-white font-14">Pinterest</p>
+                                <p class="m-0 text-white font-14">Find lifestyle inspiration & explore articles on
+                                    trending and recommended topics </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="8">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/twitter.svg" style="width: 60px;" alt="Slide 8">
+                            <div>
+                                <p class="m-0 text-white font-14">Twitter</p>
+                                <p class="m-0 text-white font-14">Discover what your favorite sports, news, politics,
+                                    and entertainment thought leaders are talking about</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="4">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/hdr.svg" style="width: 60px;" alt="Slide 4">
+                            <div>
+                                <p class="m-0 text-white font-14">Irix HDR</p>
+                                <p class="m-0 text-white font-14">Irix HDR Classic Pro - AI photo editor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+</body>
+
+</html>

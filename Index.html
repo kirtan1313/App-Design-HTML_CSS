@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-main px-md-5 px-3 py-3">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="header-logo">
+                    <img src="./assets/Img/logo.png" width="60px" alt="">
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <div class="toggle-btn active">
+                        <input type="checkbox" id="theme-toggle" checked class="cb-value" />
+                        <span class="round-btn"></span>
+                    </div>
+                    <div class="search-input position-relative">
+                        <input type="search" class="text-white" placeholder="search app">
+                        <button class="position-absolute search-button"><i
+                                class="fa-solid fa-magnifying-glass font-18"></i></button>
+                    </div>
+                    <div class="profile-manu">
+                        <nav>
+                            <div class="menu-toggle"></div>
+                            <div class="profile">
+                                <div class="user">
+                                    <h3 class="">Katherine Cooper</h3>
+                                    <p class="m-0 pt-2 ">@probablykat66</p>
+                                </div>
+                                <div class="img-box">
+                                    <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <ul class="p-0">
+                                    <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+                                    <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="mt-5">
+        <div class="px-5 menu-screen">
+            <div class="category-tab">
+                <div class="d-flex align-items-center gap-4">
+
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <div class="offcanve-img">
+                                <img src="./assets/Img/logo-r.png" alt="logo-r">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="cursor">
+                                <li class="d-flex mb-1 align-items-center gap-3 offcanvas-content-wrap">
+                                    <div class="ps-2"><i class="fa-solid fa-user"></i></div>
+                                    <div class="offcanvas-text">Log in or Sign up</div>
+                                </li>
+                                <li class="border border-1"></li>
+                                <li class="d-flex mb-1 mt-2 align-items-center gap-3 offcanvas-content-wrap-2">
+                                    <div class="ps-2"><i class="fa-brands fa-apple fs-5"></i></div>
+                                    <div class="offcanvas-text">Mac</div>
+                                </li>
+                                <li class="off-pad offcanvas-text mb-3">Business</li>
+                                <li class="off-pad offcanvas-text  mb-3">Desktop</li>
+                                <li class="off-pad offcanvas-text mb-3 ">Devlopment</li>
+                                <li class="off-pad offcanvas-text mb-3 ">Education</li>
+                                <li class="off-pad offcanvas-text  mb-3">Games</li>
+                                <li class="off-pad offcanvas-text mb-3 ">Internet</li>
+                                <li class="off-pad offcanvas-text  mb-3">Multimedia</li>
+                                <li class="off-pad offcanvas-text  mb-3">Personal</li>
+                                <li class="off-pad offcanvas-text  mb-3">Photo Edition</li>
+                                <li class="off-pad offcanvas-text mb-3 ">Utilities</li>
+                                <li class="off-pad offcanvas-text mb-3 ">Editor's Choice</li>
+                                <li class="d-flex mb-1 mt-2 align-items-center gap-3 offcanvas-content-wrap-2">
+                                    <div class="ps-2"><i class="fa-brands fa-windows fs-5"></i></div>
+                                    <div class="offcanvas-text-1">Window</div>
+                                </li>
+                                <li class="d-flex mb-1 mt-2 align-items-center gap-3 offcanvas-content-wrap-2">
+                                    <div class="ps-2"><i class="fa-solid fa-mobile fs-5"></i></div>
+                                    <div class="offcanvas-text-1">Android</div>
+                                </li>
+                                <li class="border border-1 my-3"></li>
+                                <li class="d-flex mb-1 mt-2 align-items-center gap-3 offcanvas-content-wrap-2">
+                                    <div class="ps-2"><i class="fa-solid fa-bolt fs-5"></i></div>
+                                    <div class="offcanvas-text-1">Uptodown Turbo</div>
+                                </li>
+                                <li class="d-flex mb-1 mt-2 align-items-center gap-3 offcanvas-content-wrap-2">
+                                    <div class="ps-2"><i class="fa-regular fa-message fs-5"></i></div>
+                                    <div class="offcanvas-text-1">Message</div>
+                                </li>
+                                <li class="d-flex mb-1 mt-2 align-items-center gap-3 offcanvas-content-wrap-2">
+                                    <div class="ps-2"><i class="fa-brands fa-app-store fs-5"></i></div>
+                                    <div class="offcanvas-text-1">App Store</div>
+                                </li>
+                                <li class="d-flex mb-1 mt-2 align-items-center gap-3 offcanvas-content-wrap-2">
+                                    <div class="ps-2"><i class="fa-solid fa-phone fs-5"></i></div>
+                                    <div class="offcanvas-text-1">Support</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <ul class="nav nav-tabs border-0 gap-3" id="myTab" role="tablist">
+                        <li>
+                            <a class="btn btn-primary d-flex align-items-center" data-bs-toggle="offcanvas"
+                                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <i class="fa-solid fa-bars font-22 "></i>
+                                <span class="ps-2">More Category</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Phone-tab" data-bs-toggle="tab" data-bs-target="#Phone"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-mobile-screen"></i>Phone
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Tablet-tab" data-bs-toggle="tab" data-bs-target="#Tablet"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-tablet-screen-button"></i>Tablet
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="TV-tab" data-bs-toggle="tab" data-bs-target="#TV" type="button"
+                                role="tab">
+                                <i class="fa-solid fa-tv"></i>TV
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Chromebook-tab" data-bs-toggle="tab"
+                                data-bs-target="#Chromebook" type="button" role="tab">
+                                <i class="fa-solid fa-tv"></i>Chromebook
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Watch-tab" data-bs-toggle="tab" data-bs-target="#Watch"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-tv"></i>Watch
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Car-tab" data-bs-toggle="tab" data-bs-target="#Car"
+                                type="button" role="tab">
+                                <i class="fa-solid fa-tv"></i>Car
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="px-5 pt-5 banner-section">
+            <div class="slider-main gap-3 container">
+
+
+                 <div class="slider-for w-75">
+                    <div data-id="1">
+                        <img class="image-shadow" src="./assets/Img/spotify.png" alt="Slide 4">
+                        <div class="details-content">
+                            <h3 class="text-white">Spotify - Music and Podcasts</h3>
+                            <p class="text-white pt-3">Stream the tracks you love instantly, browse the charts
+                                or fire
+                                up curated playlists in every genre and mood. Discover new music too, with
+                                awesome
+                                playlists built just for you.
+                            </p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="2">
+                        <img class="image-shadow" src="./assets/Img/amazon_misoc.png" alt="Slide 5">
+                        <div class="details-content">
+                            <h3 class="text-white">Amazon Music</h3>
+                            <p class="text-white pt-3">We're changing the way you discover and play the music
+                                you love.
+                                Listen free to music with ads—no credit card required. Prime members can enjoy
+                                all the
+                                music ad-free.
+                            </p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="3">
+                        <img class="image-shadow" src="./assets/Img/messagener.png" alt="Slide 7">
+                        <div class="details-content">
+                            <h3 class="text-white">Messenger</h3>
+                            <p class="text-white pt-3">
+                                Messenger is a free messaging app that helps you
+                                connect with anyone, anywhere.</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="4">
+                        <img class="image-shadow" src="./assets/Img/printrest.png" alt="Slide 7">
+                        <div class="details-content">
+                            <h3 class="text-white">Pinterest</h3>
+                            <p class="text-white pt-3">
+                                Discover billions of possibilities for every part of your life, from new recipes
+                                to
+                                creative home design ideas. Create extra home storage space, find your new
+                                favorite
+                                recipe, or get tattoo inspiration on Pinterest.</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="5">
+                        <img class="image-shadow" src="./assets/Img/twitter.png" alt="Slide 8">
+                        <div class="details-content">
+                            <h3 class="text-white">Twitter</h3>
+                            <p class="text-white pt-3">
+                                From breaking news and entertainment to sports, politics, and everyday
+                                interests, when
+                                it happens in the world, it happens on Twitter first. See all sides of the
+                                story. Join
+                                the conversation. Twitter is what's happening in the world and what people are
+                                talking
+                                about right now.</p>
+                            <div class="d-flex align-items-center mt-5 gap-4">
+                                <div class="download-button">
+                                    <button class="text-dark">Download</button>
+                                </div>
+                                <div>
+                                    <button class="text-white d-flex align-items-center gap-2"><svg aria-hidden="true"
+                                            class="eds_5nt5ak0 eds_5nt5ak9 eds_14hl3lj7" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#fff"
+                                                d="M12.75 8.5a.75.75 0 0 0-1.5 0v2.75H8.5a.75.75 0 0 0 0 1.5h2.75v2.75a.75.75 0 0 0 1.5 0v-2.75h2.75a.75.75 0 0 0 0-1.5h-2.75z">
+                                            </path>
+                                            <path
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25M3.75 12a8.25 8.25 0 1 1 16.5 0 8.25 8.25 0 0 1-16.5 0"
+                                                clip-rule="evenodd" fill="#fff" fill-rule="evenodd"></path>
+                                        </svg>Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+               <div class="slider-nav slider-nav-bottom w-25">
+                    <div data-id="1">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/spotify.svg" style="width: 50px;" alt="Slide 1">
+                            <div>
+                                <p class="m-0 text-white font-14">Spotify</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="2">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/amazon_misoc.svg" style="width: 50px;" alt="Slide 2">
+                            <div>
+                                <p class="m-0 text-white font-14">Amazon Music</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="3">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/messagener.svg" style="width: 50px;" alt="Slide 3">
+                            <div>
+                                <p class="m-0 text-white font-14">Messenger</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="4">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/printrest.svg" style="width: 50px;" alt="Slide 4">
+                            <div>
+                                <p class="m-0 text-white font-14">Pinterest</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div data-id="5">
+                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
+                            <img src="./assets/Img/svg/twitter.svg" style="width: 50px;" alt="Slide 5">
+                            <div>
+                                <p class="m-0 text-white font-14">Twitter</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+
+        <!-- Top App -->
+        <div class="container py-5 top-app">
+            <div class="fw-bold fs-4 top-cart">Top Chart</div>
+            <ul class="nav nav-pills pt-4 gap-3">
+                <li class="nav-item">
+                    <a class="text-decoration-none top-cart-nav active py-1 px-4" id="top-free-tab"
+                        data-bs-toggle="pill" href="#top-free">Top Free</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-decoration-none top-cart-second-nav py-1 px-4" id="top-grossing-tab"
+                        data-bs-toggle="pill" href="#top-grossing">Top
+                        Grossing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-decoration-none top-cart-second-nav py-1 px-4" id="top-paid-tab"
+                        data-bs-toggle="pill" href="#top-paid">Top Paid</a>
+                </li>
+            </ul>
+            <div class="tab-content pt-4">
+                <div class="tab-pane fade show active" id="top-free">
+                    <div class="col-12 tab-fade-x-scroll d-flex gap-3 mb-3">
+                        <div class="col p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (1).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">ChatGPT</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (2).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Meesho: Online Shopping App</div>
+                                    <div class="dec">Shopping</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (3).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Kuku TV: Reel Shows & Movies</div>
+                                    <div class="dec">Entertainment</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.2
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 tab-fade-x-scroll d-flex gap-3 mb-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (4).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Seekho: Short Learning Videos</div>
+                                    <div class="dec">Education</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (5).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Instagram</div>
+                                    <div class="dec">Social</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.3
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (6).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Instagram Lite - Save Data</div>
+                                    <div class="dec">Social</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.4
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 tab-fade-x-scroll d-flex gap-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (7).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">ToonMe - cartoons from photos</div>
+                                    <div class="dec">Photography</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.1
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (8).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">PhonePe UPI, Payment, Recharge</div>
+                                    <div class="dec">Finance</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.2
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (9).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Flipkart Online Shopping App</div>
+                                    <div class="dec">Shopping</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.3
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="top-grossing">
+                    <div class="col-12 d-flex gap-3 mb-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (19).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Facebook</div>
+                                    <div class="dec">Social</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (20).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Facebook</div>
+                                    <div class="dec">Social</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (21).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">No Thanks</div>
+                                    <div class="dec">Tools</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.7
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex gap-3 mb-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (22).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Facebook Lite</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (23).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Music</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (24).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">ChatGPT</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex gap-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (25).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Drive</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (26).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">IMO</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (27).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Facebook</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="top-paid">
+                    <div class="col-12 d-flex gap-3 mb-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (10).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Truecaller</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (11).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Business WP</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (12).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Train</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex gap-3 mb-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (13).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Blinkit</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (14).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Airtal</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (15).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">WhatsApp</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex gap-3">
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (16).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Aadhar</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (17).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Map</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex p-2 app-wrap rounded">
+                            <a href="install-pages.html" class="d-flex">
+                                <div class="app-img">
+                                    <img src="./assets/Img/chartImg/unnamed (18).webp" alt="u1">
+                                </div>
+                                <div class="ps-3 lh-sm">
+                                    <div class="number">Realme</div>
+                                    <div class="dec">Productivity</div>
+                                    <div class="star d-flex align-items-center">
+                                        4.5
+                                        <span class="star-rat ps-1"><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <!-- Somthing -->
+
+         <div class="container py-5 ">
+            <div class="position-relative d-flex justify-content-between align-items-center">
+                <h2 class="fw-bold fs-4 discover-main-name">Discover Something New</h2>
+
+            </div>
+
+            <div id="discoverCarousel" class="pt-4 carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row custome-gap">
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/D-1.webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">Photo Lab</div>
+                                        <div class="discover-price">₹2,499</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/unnamed (74).webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">Phoenix - Fast & Safe</div>
+                                        <div class="discover-price">Free</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/unnamed (75).webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">Rakuten Viber</div>
+                                        <div class="discover-price">Free</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/D-4.webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">MobiOffice: Word</div>
+                                        <div class="discover-price">₹4,899</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/unnamed (76).webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">Instamart</div>
+                                        <div class="discover-price">₹719</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="carousel-item">
+                        <div class="row custome-gap">
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/unnamed (77).webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">ZEE5 Movies</div>
+                                        <div class="discover-price">₹1,799</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/unnamed (74).webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">Phoenix - Fast & Safe</div>
+                                        <div class="discover-price">Free</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/unnamed (75).webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">Rakuten Viber</div>
+                                        <div class="discover-price">Free</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/D-4.webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">MobiOffice: Word</div>
+                                        <div class="discover-price">₹4,899</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="./assets/Img/chartImg/unnamed (76).webp" alt="d1" class="rounded w-100">
+                                    <div class="pt-2">
+                                        <div class="discover-dec">Instamart</div>
+                                        <div class="discover-price">₹719</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            </div>
+            
+        </div> 
+
+        <!-- Marquee 1 -->
+
+        <div>
+            <div class="Container popular-heading d-flex justify-content-center align-items-center">
+                <h1>POPULAR APPS</h1>
+            </div>
+            <div class="popular-apps Marquee d-flex  align-items-center">
+                <div class="Marquee-content d-flex">
+                    <div class="Marquee-tag marquee-img-1 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/chartImg/snap-icon.webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                SnapChat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-2 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/Popular/nayka-icon" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Naykaa Fashion
+                                <span class="d-block">- Shoping App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-3 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/Popular/lens-icon" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Lenskart:
+                                <div class="d-block">EyeGlass</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-4 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/chartImg/unnamed (8).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Phone Pay
+                                <div class="d-block">Payment</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-5 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/Popular/my-icon" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                MakeMyTrip
+                                <span class="d-block">Hotels</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-6 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/Popular/jio-icon" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Jio Cinema &
+                                <span class="d-block">Bigg-Boss</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-7 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/Popular/face-icon" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Facebook
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-8 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+
+                                <img src="./assets/Img/chartImg/unnamed (5).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Instagram
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-9 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/Popular/jio-icon.webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Jio Hostar Live
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-10 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/chartImg/unnamed (15).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                WhatsApp
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Marquee 2 -->
+
+         <div>
+            <div class="Container popular-heading d-flex justify-content-center align-items-center">
+                <h1>Best App</h1>
+            </div>
+            <div class="popular-apps Marquee d-flex  align-items-center">
+                <div class="Marquee-content d-flex">
+                    <div class="Marquee-tag marquee-img-11 d-inline align-items-center justify-content-center"
+                        id="mar-img">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (16).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                AadharCard
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-12 d-inline align-items-center justify-content-center"
+                        id="mar-img-2">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (17).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Find You
+                                <span class="d-block">- Location</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-13 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (19).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Google:
+                                <div class="d-block">Drive</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-14 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (28).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Phone
+                                <div class="d-block">Gallery</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-15 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (29).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Prime
+                                <span class="d-block">Video</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-16 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (37).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                LinkDin &
+                                <span class="d-block">Find-Job</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-17 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (46).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Picsart
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-18 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+
+                                <img src="./assets/Img/recomended/unnamed (66).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Google Meet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-19 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (71).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                Telegram
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Marquee-tag marquee-img-20 d-inline align-items-center justify-content-center">
+                        <div class="maruee-content-wraper gap-3 d-flex align-items-center ">
+                            <div class="Marquee-app-img">
+                                <img src="./assets/Img/recomended/unnamed (73).webp" alt="d1">
+                            </div>
+                            <div class="maree-title">
+                                TrueCaller
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+        <!-- App Slid 1 -->
+         <div class="container py-5">
+            <div class="d-flex justify-content-between">
+                <div class="recomended-heading fs-4 fw-bold">Recommended for you</div>
+                <div class="slider-controls">
+                    <button class="slider-button" id="prevBtn">←</button>
+                    <button class="slider-button" id="nextBtn">→</button>
+                </div>
+            </div>
+            <div class="app-slider d-flex " id="appSlider">
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (17).webp" alt="Google Maps">
+                        <div class="app-name">Google Maps</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (18).webp" alt="Realme Community">
+                        <div class="app-name">Realme Community</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (19).webp" alt="Google Photos">
+                        <div class="app-name">Google Photos</div>
+                        <div class="rating"><i>★</i> 4.4</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (20).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (21).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (22).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (23).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (24).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (25).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (26).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (27).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (28).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (29).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (30).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (31).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (32).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (33).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (34).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (35).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+
+
+        <!-- App Slid 2 -->
+         <div class="container py-3">
+            <div class="d-flex justify-content-between">
+                <div class="recomended-heading fs-4 fw-bold">Editors' Choice apps</div>
+                <div class="slider-controls">
+                    <button class="slider-button" id="prevBtnEdit">←</button>
+                    <button class="slider-button" id="nextBtnEdit">→</button>
+                </div>
+            </div>
+            <div class="app-slider d-flex " id="appSliderEdit">
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (36).webp" alt="Google Maps">
+                        <div class="app-name">Google Maps</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (37).webp" alt="Realme Community">
+                        <div class="app-name">Realme Community</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (38).webp" alt="Google Photos">
+                        <div class="app-name">Google Photos</div>
+                        <div class="rating"><i>★</i> 4.4</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (39).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (40).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (41).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (42).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (43).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (44).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (45).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (46).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (47).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (48).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (49).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (50).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (51).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (52).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (53).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (54).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- App Slid 3 -->
+         <div class="container py-3">
+            <div class="d-flex justify-content-between">
+                <div class="recomended-heading fs-4 fw-bold">Communication</div>
+                <div class="slider-controls">
+                    <button class="slider-button" id="prevBtnCommun">←</button>
+                    <button class="slider-button" id="nextBtnCommun">→</button>
+                </div>
+            </div>
+            <div class="app-slider d-flex " id="appSliderCommun">
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (55).webp" alt="Google Maps">
+                        <div class="app-name">Google Maps</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (56).webp" alt="Realme Community">
+                        <div class="app-name">Realme Community</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (57).webp" alt="Google Photos">
+                        <div class="app-name">Google Photos</div>
+                        <div class="rating"><i>★</i> 4.4</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (58).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (59).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (60).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (61).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (62).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (63).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (63).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (64).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (65).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (66).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (67).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (68).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (69).webp" alt="Google Drive">
+                        <div class="app-name">Google Drive</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Facebook">
+                        <div class="app-name">Facebook</div>
+                        <div class="rating"><i>★</i> 4.3</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Samsung Wallet">
+                        <div class="app-name">Samsung Wallet</div>
+                        <div class="rating"><i>★</i> 4.1</div>
+                    </a>
+                </div>
+                <div class="app-card">
+                    <a href="install-pages.html">
+                        <img src="./assets/Img/chartImg/unnamed (71).webp" alt="Music Player">
+                        <div class="app-name">Music Player</div>
+                        <div class="rating"><i>★</i> 4.2</div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+
+
+        <!-- AppStore Secuar -->
+         <div class="background">
+            <div class="container card-wraper d-flex justify-content-between align-items-center">
+                <div class="card-main  rounded">
+                    <div class="icon">
+                        <img src="./assets/Img/chartImg/five_lakh_apps.webp" alt="Icon 1">
+                    </div>
+                    <h3 class="pt-3 fs-2 ">5 Lakh Apps and Counting</h3>
+                    <p class="pt-3">From work to play and everything in between, find apps and games that make
+                        life
+                        better.</p>
+                </div>
+                <div class="card-main rounded">
+                    <div class="icon">
+                        <img class="card-img-height" src="./assets/Img/chartImg/safe_secure_downloads-t.png"
+                            alt="Icon 2">
+                    </div>
+                    <h3 class="pt-3">Safe and Secure Downloads</h3>
+                    <p class="pt-3">Every app is tested for malware and security risks to protect your device.
+                    </p>
+                </div>
+                <div class="card-main rounded">
+                    <div class="icon">
+                        <img src="./assets/Img/chartImg/available_languages.webp" alt="Icon 3">
+                    </div>
+                    <h3 class="pt-3">Available in 13 Indian Languages</h3>
+                    <p class="pt-3">Available in English + 12 Indian languages for a familiar browsing
+                        experience.</p>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Footer -->
+
+         <div class="container footer-wraper py-5 d-flex">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-img">
+                    <img src="./assets/Img/logo-r.png" alt="logo-r">
+                </div>
+                <div class="pt-4 footer-content">
+                    DMT Appstore Private Limited
+
+                </div>
+                <div class="footer-con">
+                    (Formerly known as ‘OSLabs Technology (India) Private Limited’)
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="pages-content pb-3"> Pages</div>
+                <ul>
+                    <li class="pages-li">
+                        Web AppStore
+                    </li>
+                    <li class="pages-li">
+                        For Devlopers
+                    </li>
+                    <li class="pages-li">
+                        Support
+                    </li>
+                    <li class="pages-li">
+                        Blog
+                    </li>
+                    <li class="pages-li">
+                        Press
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="pages-content pb-3">
+                    T&C And Polices
+                </div>
+                <ul>
+                    <li class="pages-li">
+                        Consumer T&C
+                    </li>
+                    <li class="pages-li">
+                        Devloper T&C
+                    </li>
+                    <li class="pages-li">
+                        Devloper Policy
+                    </li>
+                    <li class="pages-li">
+                        Private Policy
+                    </li>
+                    <li class="pages-li">
+                        Grievance Policy
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="pages-content">Reach Us At</div>
+                <ul class="pt-3">
+                    <li class="pages-content">Address</li>
+                    <li class="pages-li">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, porro.
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </main>
+
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+</body>
+
+</html>
