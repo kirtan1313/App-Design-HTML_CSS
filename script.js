@@ -22,22 +22,22 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav-top, .slider-nav-bottom', // Both Navs Linked
+    asNavFor: '.slider-nav-top, .slider-nav-bottom', 
     autoplay: true,
-    autoplaySpeed: 3000, // Main slider ni speed vadhare rakhiye
+    autoplaySpeed: 3000, 
   });
 
   $('.slider-nav').slick({
-    slidesToShow: 4, // Ek j image dekhaay
+    slidesToShow: 4, 
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
     infinite: false,
-    centerMode: false, // CenterMode false kariye
+    centerMode: false, 
     arrows: false,
     focusOnSelect: true,
-    autoplay: true, // Thumbnails automatic slide thay
-    autoplaySpeed: 2500, // Thumbnails ni speed thodi ochi rakhiye
+    autoplay: true, 
+    autoplaySpeed: 2500, 
   });
 });
 
