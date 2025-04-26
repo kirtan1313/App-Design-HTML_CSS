@@ -61,20 +61,19 @@
     </header>
 
 
-    <main>
+    <main class=" main-padding-top-app-section">
         <div class="page-container py-5">
             <div class="main-content d-flex">
                 <div class="main-instalaton col-12 col-lg-8">
-                    <div class="small-size-img d-flex gap-2 align-items-center">
-                        <div class="d-block d-lg-none">
+                    <div class="small-size-img d-flex gap-3 align-items-center">
+                        <div>
                             <img src="./assets/Img/Install-img/Main-img-install.webp" alt="mi" class="rounded shadow">
-
                         </div>
-                        <div class="install-heading lh-sm">Picture Editor, Frame - Polish</div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="text-primary fw-bold">InShot Inc.</div>
-                        <div class="text-secondary install-small-text fw-bold">Contains adsIn-app purchases</div>
+                        <div>
+                            <div class="install-heading lh-sm">Picture Editor, Frame - Polish</div>
+                            <div class="text-primary fw-bold">InShot Inc.</div>
+                            <div class="text-secondary install-small-text fw-bold">Contains adsIn-app purchases</div>
+                        </div>
                     </div>
                     <ul class="d-flex gap-5 pt-4">
                         <li>
@@ -100,30 +99,96 @@
                         </li>
                     </ul>
 
-                    <div class="d-flex gap-4 pt-3 responsive-btn">
-                        <button type="button" class="btn text-white bg-primary px-5">Install</button>
+                    <div class="d-flex gap-4 pt-3 responsive-btn cursor">
+                        <button type="button" class="btn rounded text-white bg-primary px-5">Install</button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <div class="text-primary d-flex align-items-center">
+                                <span class="fs-4"><i class="fa-solid fa-share-nodes"></i></span>
+                                <span class="ps-2">Share</span>
+                            </div>
+                        </button>
 
-
-                        <div class=" text-primary d-flex align-items-center">
-                            <span class="fs-4"><i class="fa-solid fa-share-nodes"></i></span>
-                            <span class="ps-2">Share</span>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div class="d-flex align-items-center gap-3 mb-3">
+                                            <img src="./assets/Img/Popular/jio-icon.webp" alt="Opera Mini Icon"
+                                                class="rounded-circle"
+                                                style="width: 50px; height: 50px; object-fit: cover;">
+                                            <div>
+                                                <h5 class="mb-0">Opera Mini - fast web browser</h5>
+                                                <small class="text-muted">Share this app</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center gap-4 my-3">
+                                            <a href="#" class="text-decoration-none text-dark"><i
+                                                    class="fa-brands fa-twitter fs-2"></i></a>
+                                            <a href="#" class="text-decoration-none text-dark"><i
+                                                    class="fa-brands fa-facebook fs-2"></i></a>
+                                            <a href="#" class="text-decoration-none text-dark"><i
+                                                    class="fa-brands fa-whatsapp fs-2"></i></a>
+                                            <a href="#" class="text-decoration-none text-dark"><i
+                                                    class="fa-solid fa-envelope fs-2"></i></a>
+                                        </div>
+                                        <div>
+                                            <input type="text" class="form-control text-center" readonly
+                                                value="https://play.google.com/store/apps/details?id=com.opera.mini">
+                                        </div>
+                                        <div class="text-center mt-3">
+                                            <button class="btn btn-outline-primary btn-sm">Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="text-primary d-flex align-items-center">
                             <span><i class="fa-solid fa-bookmark"></i></span>
                             <span class="ps-2">Add To Wis</span>
                         </div>
-
-
                     </div>
+
                     <div class="text-secondary pt-4">
                         <span><i class="fa-solid fa-laptop"></i></span>
                         You don't have any devices
                     </div>
                 </div>
+
                 <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-                    <div class="app-installation-img ">
-                        <img src="./assets/Img/Install-img/Main-img-install.webp" alt="mi" class="rounded shadow">
+
+                    <div class="About-App-Section ">
+                        <div class="fs-4 fw-bold d-flex align-items-center">About This App <span
+                                class="ms-3 py-2 px-3 rounded-circle about-aerrow">→</span></div>
+
+                        <p class="lh-sm about-text">
+                            Photo Editor Pro offers everything you want to edit pictures on this pics art trip. 500+
+                            stylish effects, face tunes, photo collage, blur photo, filters, grids, change
+                            background &
+                            beauty plus tools help you create pics art fun or make meme! With Photo Editor Pro, you
+                            can
+                            directly post your artworks to Instagram, WhatsApp, Facebook etc. Unlock your
+                            creativity,
+                            and edit pictures like a pro!
+                        </p>
+                        <div class="about-text pt-2">📸All-In-One Editor</div>
+                        <div class="about-text">✅ Remove: Clean up anything you don’t want, like watermarks, LOGO,
+                            and
+                            passers-by.</div>
+                        <div class="lXlx5 pt-4 text-dark">Updated on</div>
+                        <div class="xg1aie text-secondary">10 Apr 2025</div>
+
+                        <div class="d-flex gap-3 pt-4 hastag-app">
+                            <div class="about-hashtag cursor">#9 top free photography</div>
+                            <div class="about-hashtag cursor">Photography</div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
@@ -172,7 +237,7 @@
                     </div>
 
 
-                    <div class="data-safety-section py-5">
+                    <div class="d-block d-lg-none data-safety-section py-5">
                         <div class="fs-4 fw-bold d-flex align-items-center">Data Safety <span
                                 class="ms-3 py-2 px-3 rounded-circle about-aerrow">→</span></div>
                         <p class="lh-sm about-text">
@@ -212,9 +277,104 @@
                             </div>
                             <div class="text-primary fw-bold">See details</div>
                         </div>
+                    </div> 
+
+                    <div class="d-none d-lg-block additional-section rounded my-5 p-3">
+                        <div class="fs-5 fw-bold d-flex align-items-center">Additional information<span
+                                class="ms-3 py-2 px-3 rounded-circle about-aerrow">→</span>
+                        </div>
+                        <div class="border border-1 mt-2"></div>
+
+                        <div class="pt-3">
+                            <div class="col-12 additional-content gap-2 overflow-hidden pb-5 d-flex justify-content-between">
+                                <div class="col-4  additional-under-content d-flex align-items-center gap-3">
+                                    <div class="d-flex "><i class="fa-solid fa-bullhorn"></i></div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold"> Published by</div>
+                                        <div class="additn-color pt-2 text-primary">InShot Inc.</div>
+                                    </div>
+                                </div>
+                                <div class="col-4  additional-under-content d-flex align-items-center gap-3">
+                                    <div class="d-flex "><i class="fa-solid fa-calendar-days"></i>
+                                    </div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">Release date</div>
+                                        <div class="additn-color pt-2 text-primary">01/02/2017</div>
+                                    </div>
+                                </div>
+                                <div class="col-4  additional-under-content d-flex align-items-center gap-3">
+                                    <div class="d-flex "><i class="fa-solid fa-sitemap"></i></div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">Approximate size</div>
+                                        <div class="additn-color pt-2 text-primary">189.5 MB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 additional-content gap-2 overflow-hidden pb-5 d-flex justify-content-between">
+                                <div class="col-4  additional-under-content d-flex align-items-center gap-3">
+                                    <div class="d-flex"><i class="fa-solid fa-bookmark"></i></div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">Category</div>
+                                        <div class="additn-color pt-2 text-primary">Social</div>
+                                    </div>
+                                </div>
+                                <div class="col-4  additional-under-content d-flex align-items-center gap-3">
+                                    <div class="d-flex"><i class="fa-solid fa-download"></i></div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">Installation</div>
+                                        <div class="additn-color pt-2 text-primary">
+                                            Get this app while signed in to your Microsoft account and install on up to
+                                            ten Windows devices
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4  additional-under-content d-flex align-items-center gap-3">
+                                    <div class="d-flex"><i class="fa-solid fa-shield"></i></div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">This app can</div>
+                                        <div class="additn-color pt-2 text-primary">
+                                            <div>Use your location</div>
+                                            <div>Use your webcam</div>
+                                            <div>Use your microphone</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 additional-content gap-2 overflow-hidden  d-flex justify-content-between">
+                                <div class="d-flex additional-under-content  align-items-center col-4 gap-3">
+                                    <div class="d-flex "><i class="fa-solid fa-comment"></i></div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">Supported languages</div>
+                                        <div class="additn-color pt-2 text-primary">
+                                            Afrikaans
+                                            <div>Albanian</div>
+                                            <div>Arabic</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex additional-under-content  align-items-center col-4 gap-3">
+                                    <div class="d-flex "><i class="fa-solid fa-expand"></i>
+                                    </div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">App badge</div>
+                                        <div class="additn-color pt-2 text-primary">
+                                            Create A Bagde
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex additional-under-content  align-items-center col-4 gap-3">
+                                    <div class="d-flex "><i class="fa-regular fa-thumbs-up"></i></div>
+                                    <div class="lh-sm">
+                                        <div class="fw-bold">Legal Disclaimer</div>
+                                        <div class="additn-color pt-2 text-primary">
+                                            This seller has certified that it will only offer products or services that
+                                            comply with EU laws.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
 
                     <div class="review-rating-section">
                         <div class="fs-4 fw-bold d-flex align-items-center">Ratings and reviews
@@ -378,34 +538,8 @@
 
 
                 <div class="col-lg-4 col-md-12">
-                    <div class="About-App-Section ">
-                        <div class="fs-4 fw-bold d-flex align-items-center">About This App <span
-                                class="ms-3 py-2 px-3 rounded-circle about-aerrow">→</span></div>
 
-                        <p class="lh-sm about-text">
-                            Photo Editor Pro offers everything you want to edit pictures on this pics art trip. 500+
-                            stylish effects, face tunes, photo collage, blur photo, filters, grids, change
-                            background &
-                            beauty plus tools help you create pics art fun or make meme! With Photo Editor Pro, you
-                            can
-                            directly post your artworks to Instagram, WhatsApp, Facebook etc. Unlock your
-                            creativity,
-                            and edit pictures like a pro!
-                        </p>
-                        <div class="about-text pt-2">📸All-In-One Editor</div>
-                        <div class="about-text">✅ Remove: Clean up anything you don’t want, like watermarks, LOGO,
-                            and
-                            passers-by.</div>
-                        <div class="lXlx5 pt-4 text-dark">Updated on</div>
-                        <div class="xg1aie text-secondary">10 Apr 2025</div>
-
-                        <div class="d-flex gap-3 pt-4 hastag-app">
-                            <div class="about-hashtag cursor">#9 top free photography</div>
-                            <div class="about-hashtag cursor">Photography</div>
-                        </div>
-                    </div>
-
-                    <div class="new-section py-5">
+                    <div class="new-section pb-4">
                         <h2>What's New</h2>
                         <div class="pt-3 text-secondary">
                             <div>💡Face Upgrade: Shape your face with more precious control - V-face, jawline,
@@ -429,7 +563,7 @@
                                             </div>
                                             <div>Paradise Huntress</div>
                                         </div>
-                                        <div>
+                                        <div class="pe-3">
                                             <i class="fa-solid fa-ellipsis-vertical fs-5"></i>
                                         </div>
                                     </div>
@@ -470,7 +604,7 @@
                                             <div class="bg-primary text-white py-2 px-3 rounded-circle">D</div>
                                             <div>Debbie Futrell-Hall</div>
                                         </div>
-                                        <div>
+                                        <div class="pe-3">
                                             <i class="fa-solid fa-ellipsis-vertical fs-5"></i>
                                         </div>
                                     </div>
@@ -517,6 +651,46 @@
                             <span class="text-dark fw-bold fs-2">→</span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                    </div>
+
+                    <div class="Slide-app-section d-none d-lg-block">
+                        <div class="fs-4 fw-bold d-flex align-items-center">Similur App
+                            <span class="ms-3 py-2 px-3 rounded-circle about-aerrow">→</span>
+                        </div>
+                        <div class="slider-card-app-wrape">
+                            <div class="ps-3  slider-app-wraper d-flex gap-3">
+                                <div class="slider-img"><img src="./assets/Img/Popular/insta-icon" alt="insta-icon"
+                                        class="rounded shadow"></div>
+                                <div>
+                                    <div class="slde-main-text">Instagram</div>
+                                    <div class="slider-main-small-text text-secondary">Create A Reels & Photo</div>
+                                </div>
+                            </div>
+                            <div class="ps-3  slider-app-wraper d-flex gap-3">
+                                <div class="slider-img"><img src="./assets/Img/chartImg/unnamed (20).webp"
+                                        alt="insta-icon" class="rounded shadow"></div>
+                                <div>
+                                    <div class="slde-main-text">Facebook</div>
+                                    <div class="slider-main-small-text text-secondary">Create A Reels & Photo</div>
+                                </div>
+                            </div>
+                            <div class="ps-3  slider-app-wraper d-flex gap-3">
+                                <div class="slider-img"><img src="./assets/Img/chartImg/unnamed (15).webp"
+                                        alt="insta-icon" class="rounded shadow"></div>
+                                <div>
+                                    <div class="slde-main-text">WhatsApp</div>
+                                    <div class="slider-main-small-text text-secondary">Create A Reels & Photo</div>
+                                </div>
+                            </div>
+                            <div class=" ps-3 slider-app-wraper d-flex gap-3">
+                                <div class="slider-img"><img src="./assets/Img/chartImg/snap-icon.webp" alt="insta-icon"
+                                        class="rounded shadow"></div>
+                                <div>
+                                    <div class="slde-main-text">Snapchat</div>
+                                    <div class="slider-main-small-text text-secondary">Create A Reels & Photo</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -834,27 +1008,58 @@
 
             <div>
                 <div class="border border-1"></div>
-                <div class="d-flex pt-4">
-                    <ul class="footer-font-size cursor ">
-                        <div class="pb-3 text-secondary fs-5">Google Pay</div>
-                        <li class="pb-2 footer-font-hover">
-                            Play Pass
-                        </li>
-                        <li class="pb-2 footer-font-hover">Play Points</li>
-                        <li class="pb-2 footer-font-hover">Gift Card</li>
-                        <li class="pb-2 footer-font-hover">Redeem</li>
-                        <li class="footer-font-hover">Refund Policy</li>
-                    </ul>
+                <div class="d-flex pt-4 footer-wraper-install">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="footer-img">
+                            <img src="./assets/Img/logo-r.png" alt="logo-r">
+                        </div>
+                        <div class="pt-4 footer-content">
+                            DMT Appstore Private Limited
 
-                    <ul class="footer-font-size1 cursor">
-                        <div class="pb-3 text-secondary fs-5">Children and family</div>
-                        <li class="pb-2 footer-font-hover">
-                            Play Pass
-                        </li>
-                        <li class="pb-2 footer-font-hover">Parent guide</li>
-                        <li class="pb-2 footer-font-hover">Family sharing</li>
+                        </div>
+                        <div class="footer-con">
+                            (Formerly known as ‘OSLabs Technology (India) Private Limited’)
+                        </div>
+                        <div class="d-flex gap-3 pt-3">
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/snap-icon.webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (5).webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (15).webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (20).webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (35).webp" alt="" class="rounded">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex col-12 col-md-6 col-lg-6 col-xl-6 footer-nav-link">
+                        <ul class="footer-font-size cursor ">
+                            <div class="pb-3 text-secondary fs-5">Google Pay</div>
+                            <li class="pb-2 footer-font-hover">
+                                Play Pass
+                            </li>
+                            <li class="pb-2 footer-font-hover">Play Points</li>
+                            <li class="pb-2 footer-font-hover">Gift Card</li>
+                            <li class="pb-2 footer-font-hover">Redeem</li>
+                            <li class="footer-font-hover">Refund Policy</li>
+                        </ul>
 
-                    </ul>
+                        <ul class="footer-font-size1 cursor">
+                            <div class="pb-3 text-secondary fs-5">Children and family</div>
+                            <li class="pb-2 footer-font-hover">
+                                Play Pass
+                            </li>
+                            <li class="pb-2 footer-font-hover">Parent guide</li>
+                            <li class="pb-2 footer-font-hover">Family sharing</li>
+
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer-nav pt-4">
                     <ul class="footer-nav-wrap d-flex align-items-center gap-3 cursor">

@@ -25,10 +25,10 @@
                     <img src="./assets/Img/logo.png" width="60px" alt="">
                 </div>
                 <div class="d-flex align-items-center gap-4">
-                    <div class="toggle-btn active">
+                    <!-- <div class="toggle-btn active">
                         <input type="checkbox" id="theme-toggle" checked class="cb-value" />
                         <span class="round-btn"></span>
-                    </div>
+                    </div> -->
                     <div class="search-input position-relative">
                         <input type="search" class="text-white" placeholder="search app">
                         <button class="position-absolute search-button"><i
@@ -53,6 +53,12 @@
                                     <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
                                     <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
                                     <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                                    <li class="ps-3">
+                                        <div class="toggle-btn active">
+                                            <input type="checkbox" id="theme-toggle" checked class="cb-value" />
+                                            <span class="round-btn"></span>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -63,7 +69,7 @@
     </header>
 
 
-    <main class="mt-5">
+    <main class="mt-5 main-padding-top">
         <div class="px-5 menu-screen">
             <div class="category-tab">
                 <div class="d-flex align-items-center gap-4">
@@ -184,7 +190,7 @@
             <div class="slider-main gap-3 container">
 
 
-                 <div class="slider-for w-75">
+                <div class="slider-for w-75">
                     <div data-id="1">
                         <img class="image-shadow" src="./assets/Img/spotify.png" alt="Slide 4">
                         <div class="details-content">
@@ -329,57 +335,67 @@
                             </div>
                         </div>
                     </div>
-                </div> 
-                
-               <div class="slider-nav slider-nav-bottom w-25">
+                </div>
+
+                <div class="slider-nav slider-nav-bottom w-25">
                     <div data-id="1">
-                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
-                            <img src="./assets/Img/svg/spotify.svg" style="width: 50px;" alt="Slide 1">
-                            <div>
-                                <p class="m-0 text-white font-14">Spotify</p>
-                                
-                            </div>
+                        <div class="slider-nav-theme">
+                            <a href="install-pages.html" class="d-flex align-items-center gap-3">
+                                <img src="./assets/Img/svg/spotify.svg" style="width: 50px;" alt="Slide 1">
+                                <div>
+                                    <p class="m-0 text-white font-14">Spotify</p>
+
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div data-id="2">
-                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
-                            <img src="./assets/Img/svg/amazon_misoc.svg" style="width: 50px;" alt="Slide 2">
-                            <div>
-                                <p class="m-0 text-white font-14">Amazon Music</p>
-                                
-                            </div>
+                        <div class=" slider-nav-theme">
+                            <a href="install-pages.html" class="d-flex align-items-center gap-3">
+                                <img src="./assets/Img/svg/amazon_misoc.svg" style="width: 50px;" alt="Slide 2">
+                                <div>
+                                    <p class="m-0 text-white font-14">Amazon Music</p>
+
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div data-id="3">
-                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
-                            <img src="./assets/Img/svg/messagener.svg" style="width: 50px;" alt="Slide 3">
-                            <div>
-                                <p class="m-0 text-white font-14">Messenger</p>
-                               
-                            </div>
+                        <div class=" slider-nav-theme">
+                            <a href="install-pages.html" class="d-flex align-items-center gap-3">
+                                <img src="./assets/Img/svg/messagener.svg" style="width: 50px;" alt="Slide 3">
+                                <div>
+                                    <p class="m-0 text-white font-14">Messenger</p>
+
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div data-id="4">
-                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
-                            <img src="./assets/Img/svg/printrest.svg" style="width: 50px;" alt="Slide 4">
-                            <div>
-                                <p class="m-0 text-white font-14">Pinterest</p>
-                            
-                            </div>
+                        <div class=" slider-nav-theme">
+                            <a href="install-pages.html" class="d-flex align-items-center gap-3">
+                                <img src="./assets/Img/svg/printrest.svg" style="width: 50px;" alt="Slide 4">
+                                <div>
+                                    <p class="m-0 text-white font-14">Pinterest</p>
+
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div data-id="5">
-                        <div class="d-flex align-items-center gap-3 slider-nav-theme">
-                            <img src="./assets/Img/svg/twitter.svg" style="width: 50px;" alt="Slide 5">
-                            <div>
-                                <p class="m-0 text-white font-14">Twitter</p>
+                        <div class=" slider-nav-theme">
+                            <a href="install-pages.html" class="d-flex align-items-center gap-3">
+                                <img src="./assets/Img/svg/twitter.svg" style="width: 50px;" alt="Slide 5">
+                                <div>
+                                    <p class="m-0 text-white font-14">Twitter</p>
 
-                            </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
-        </div> 
+        </div>
 
         <!-- Top App -->
         <div class="container py-5 top-app">
@@ -838,13 +854,13 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
 
 
         <!-- Somthing -->
 
-         <div class="container py-5 ">
+        <div class="container py-5 ">
             <div class="position-relative d-flex justify-content-between align-items-center">
                 <h2 class="fw-bold fs-4 discover-main-name">Discover Something New</h2>
 
@@ -901,7 +917,7 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="carousel-item">
                         <div class="row custome-gap">
                             <div class="col-6 col-sm-4 col-md-3 col-lg-2 discover-card">
@@ -952,11 +968,72 @@
                         </div>
                     </div>
                 </div>
-            
-                
             </div>
-            
-        </div> 
+        </div>
+
+
+        <!-- New -->
+
+        <div class="container">
+            <div class="defrent-app-list py-5 d-flex align-items-center gap-4 flex-wrap">
+
+                <div class="col-lg-4 col-md-12 defrent-main-card p-4">
+                    <div class="fs-4 fw-bold">Online App</div>
+                    <div class="text-secondary pt-2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore eius tempore beatae magnam
+                        tenetur. Voluptates impedit soluta voluptas modi quia autem commodi, consequatur, dolores, quod
+                        magnam provident quidem sint dolorum?
+                    </div>
+                    <div class="pt-3 text-success fw-bold">Learn More..</div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 d-flex gap-3 justify-content-between flex-wrap">
+                    <div class="defrent-card text-center col-lg-3 col-md-4 col-5 p-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/Img/food-app.png" alt="Online Shopping"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                        </div>
+                        <div class="pt-2">Online Shopping</div>
+                    </div>
+                    <div class="defrent-card text-center col-lg-3 col-md-4 col-5 p-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/Img/smart-tv (1).png" alt="Online Shopping"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                        </div>
+                        <div class="pt-2">Online Shows</div>
+                    </div>
+                    <div class="defrent-card text-center col-lg-3 col-md-4 col-5 p-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/Img/online-shopping.png" alt="Online Shopping"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                        </div>
+                        <div class="pt-2">Product Purchase</div>
+                    </div>
+                    <div class="defrent-card text-center col-lg-3 col-md-4 col-5 p-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/Img/debit-card.png" alt="Online Shopping"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                        </div>
+                        <div class="pt-2">Money Transfer</div>
+                    </div>
+                    <div class="defrent-card text-center col-lg-3 col-md-4 col-5 p-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/Img/photo-editing.png" alt="Online Shopping"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                        </div>
+                        <div class="pt-2">Photo-Editing</div>
+                    </div>
+                    <div class="defrent-card text-center col-lg-3 col-md-4 col-5 p-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/Img/social-media.png" alt="Online Shopping"
+                                style="width: 50px; height: 50px; object-fit: cover;">
+                        </div>
+                        <div class="pt-2">Entertainment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Marquee 1 -->
 
@@ -1077,9 +1154,13 @@
         </div>
 
 
+
+
+
+
         <!-- Marquee 2 -->
 
-         <div>
+        <div>
             <div class="Container popular-heading d-flex justify-content-center align-items-center">
                 <h1>Best App</h1>
             </div>
@@ -1195,11 +1276,11 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
 
         <!-- App Slid 1 -->
-         <div class="container py-5">
+        <div class="container py-5">
             <div class="d-flex justify-content-between">
                 <div class="recomended-heading fs-4 fw-bold">Recommended for you</div>
                 <div class="slider-controls">
@@ -1361,11 +1442,11 @@
                     </a>
                 </div>
             </div>
-        </div> 
+        </div>
 
 
         <!-- App Slid 2 -->
-         <div class="container py-3">
+        <div class="container py-3">
             <div class="d-flex justify-content-between">
                 <div class="recomended-heading fs-4 fw-bold">Editors' Choice apps</div>
                 <div class="slider-controls">
@@ -1508,10 +1589,10 @@
                     </a>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <!-- App Slid 3 -->
-         <div class="container py-3">
+        <div class="container py-3">
             <div class="d-flex justify-content-between">
                 <div class="recomended-heading fs-4 fw-bold">Communication</div>
                 <div class="slider-controls">
@@ -1654,11 +1735,11 @@
                     </a>
                 </div>
             </div>
-        </div> 
+        </div>
 
 
         <!-- AppStore Secuar -->
-         <div class="background">
+        <div class="background">
             <div class="container card-wraper d-flex justify-content-between align-items-center">
                 <div class="card-main  rounded">
                     <div class="icon">
@@ -1687,11 +1768,11 @@
                         experience.</p>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <!-- Footer -->
 
-         <div class="container footer-wraper py-5 d-flex">
+        <div class="container footer-wraper py-5 d-flex">
             <div class="col-12 col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-img">
                     <img src="./assets/Img/logo-r.png" alt="logo-r">
@@ -1758,7 +1839,7 @@
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div>
     </main>
 
 

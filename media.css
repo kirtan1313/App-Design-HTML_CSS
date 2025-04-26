@@ -60,67 +60,127 @@
     .custome-gap {
         gap: 5px !important;
     }
-    .popular-heading::before,.popular-heading::after{
+
+    .popular-heading::before,
+    .popular-heading::after {
         width: 23%;
     }
-    .card-wraper{
+
+    .card-wraper {
         flex-wrap: wrap;
         justify-content: center !important;
     }
-    .card-main{
+
+    .card-main {
         margin-bottom: 15px;
     }
+
     .icon img {
         width: 150px;
     }
-    .footer-wraper{
+
+    .footer-wraper {
         flex-wrap: wrap;
     }
-    .pages-content{
+
+    .pages-content {
         padding-top: 20px;
     }
+
     .page-container {
         padding: 0 20px;
         margin: 0 !important;
         overflow-x: hidden !important;
     }
-    .small-size-img img{
+
+    .small-size-img img {
         width: 80px;
         height: 80px;
     }
-    .install-heading{
+
+    .install-heading {
         font-size: 30px;
     }
-    .about-text{
+
+    .about-text {
         padding-top: 13px;
     }
-    .data-safety-box{
+
+    .data-safety-box {
         margin-top: 25px;
     }
-    .review-nav{
+
+    .review-nav {
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
         scrollbar-width: none;
     }
-    .review-rating-section .nav{
+
+    .review-rating-section .nav {
         flex-wrap: nowrap;
         margin-bottom: 15px;
     }
-    .review-rating-section .nav-item{
+
+    .review-rating-section .nav-item {
         margin-bottom: 12px;
     }
-    .review-rate .review-star{
+
+    .review-rate .review-star {
         display: flex;
     }
-    .review-lakh{
+
+    .review-lakh {
         padding-top: 10px;
     }
-    .offcanvas.offcanvas-start{
+
+    .offcanvas.offcanvas-start {
         width: 250px;
     }
-    .footer-nav-wrap{
+
+    .footer-nav-wrap {
         flex-wrap: wrap;
+    }
+
+    .carousel-control-prev {
+        left: 76% !important;
+    }
+
+    .main-padding-top-app-section {
+        padding-top: 60px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+    }
+
+    .About-App-Section {
+        padding-top: 50px;
+    }
+     .carousel-control-prev,
+    .carousel-control-next {
+        top: 80% !important;
+    }
+    .carousel-control-prev {
+        left: 30% !important;
+    }
+    .carousel-control-next {
+        left: 40% !important;
+    }
+    .footer-wraper-install{
+        flex-wrap: wrap;
+    }
+    .footer-nav-link{
+        padding-top: 35px;
+    }
+    .defrent-card{
+        width: 180px !important;
+    }
+    .additional-content{
+        flex-wrap: wrap;
+    }
+    .additional-under-content{
+        padding-top: 10px;
     }
 }
 
@@ -137,9 +197,11 @@
         max-width: 100% !important;
         width: 100% !important;
     }
+
     .offcanvas {
-        width: 100%; 
+        width: 100%;
     }
+
     .search-input {
         display: none;
     }
@@ -162,7 +224,7 @@
         overflow-x: auto;
         white-space: nowrap;
         scrollbar-width: none;
-        padding: 10px 10px !important;
+        padding: 25px 11px !important;
     }
 
     .header-logo img {
@@ -179,48 +241,84 @@
     .custome-gap {
         gap: 5px !important;
     }
-    .popular-heading::before,.popular-heading::after{
+
+    .popular-heading::before,
+    .popular-heading::after {
         width: 30%;
     }
-    .card-wraper{
+
+    .card-wraper {
         flex-wrap: wrap;
         justify-content: center !important;
     }
-    .card-main{
+
+    .card-main {
         margin-bottom: 15px;
     }
+
     .icon img {
         width: 200px;
     }
-    .footer-wraper{
+
+    .footer-wraper {
         flex-wrap: wrap;
     }
-    .pages-content{
+
+    .pages-content {
         padding-top: 20px;
     }
+
     .page-container {
         padding: 0 20px;
         margin: 0 !important;
         overflow-x: hidden !important;
     }
-    .small-size-img img{
+
+    .small-size-img img {
         width: 80px;
         height: 80px;
     }
-    .install-heading{
+
+    .install-heading {
         font-size: 30px;
     }
-    .about-text{
+
+    .about-text {
         padding-top: 13px;
     }
-    .data-safety-box{
+
+    .data-safety-box {
         margin-top: 25px;
     }
-    .review-rating-section .tab-content{
+
+    .review-rating-section .tab-content {
         padding-top: 15px;
     }
-    .offcanvas.offcanvas-start{
+
+    .offcanvas.offcanvas-start {
         width: 250px;
+    }
+
+    .carousel-control-prev {
+        left: 84% !important;
+    }
+
+    .main-padding-top-app-section {
+        padding-top: 80px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+    }
+
+    .About-App-Section {
+        padding-top: 50px;
+    }
+    .footer-wraper-install{
+        flex-wrap: wrap;
+    }
+    .footer-nav-link{
+        padding-top: 35px;
     }
 }
 
@@ -271,48 +369,77 @@
     .custome-gap {
         gap: 5px !important;
     }
-    .popular-heading::before,.popular-heading::after{
+
+    .popular-heading::before,
+    .popular-heading::after {
         width: 35%;
     }
+
     .icon img {
         width: 200px;
     }
-    .card-main{
+
+    .card-main {
         width: 250px;
         height: 410px;
     }
-    .card-wraper{
+
+    .card-wraper {
         gap: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    .footer-wraper{
+
+    .footer-wraper {
         flex-wrap: wrap;
     }
-    .pages-content{
+
+    .pages-content {
         padding-top: 20px;
     }
+
     .page-container {
         padding: 0 20px;
         margin: 0 !important;
         overflow-x: hidden !important;
     }
-    .small-size-img img{
+
+    .small-size-img img {
         width: 120px;
         height: 120px;
     }
-    .install-heading{
+
+    .install-heading {
         font-size: 40px;
     }
-    .about-text{
+
+    .about-text {
         padding-top: 13px;
     }
-    .data-safety-box{
+
+    .data-safety-box {
         margin-top: 25px;
     }
-    .review-rating-section .tab-content{
+
+    .review-rating-section .tab-content {
         padding-top: 15px;
     }
-    .offcanvas.offcanvas-start{
+
+    .offcanvas.offcanvas-start {
         width: 280px;
+    }
+
+    .carousel-control-prev {
+        left: 88% !important;
+    }
+    .main-padding-top-app-section {
+        padding-top: 60px;
+    }
+    .main-content {
+        flex-wrap: wrap;
+    }
+    .About-App-Section {
+        padding-top: 50px;
     }
 }
 
@@ -329,65 +456,82 @@
         scrollbar-width: none;
         padding: 10px 10px !important;
     }
-  
-    .hastag-app{
+
+    .hastag-app {
         flex-wrap: wrap;
     }
+
     .banner-section {
         display: block;
     }
-    .popular-heading::before,.popular-heading::after{
+
+    .popular-heading::before,
+    .popular-heading::after {
         width: 36%;
     }
+
     .icon img {
         width: 200px;
     }
-    .card-main{
+
+    .card-main {
         width: 250px;
         height: 445px;
     }
-    .card-wraper{
+
+    .card-wraper {
         gap: 10px;
     }
-    .footer-wraper{
+
+    .footer-wraper {
         flex-wrap: wrap;
     }
-    .pages-content{
+
+    .pages-content {
         padding-top: 20px;
     }
-    .install-heading{
+
+    .install-heading {
         font-size: 40px;
     }
-    .about-text{
+
+    .about-text {
         padding-top: 13px;
     }
-    .data-safety-box{
+
+    .data-safety-box {
         margin-top: 25px;
     }
+
     .carousel-control-prev {
         left: 70% !important;
     }
-    .carousel-inner{
+
+    .carousel-inner {
         padding-top: 20px;
     }
-    .offcanvas.offcanvas-start{
+
+    .offcanvas.offcanvas-start {
         width: 310px;
     }
 }
 
 
 @media (min-width: 1200px) {
-    .card-main{
+    .card-main {
         width: 350px;
         height: 460px;
     }
-    .card-wraper{
+
+    .card-wraper {
         gap: 10px;
     }
+
     .carousel-control-prev {
         left: 76% !important;
     }
-    .carousel-inner{
+
+    .carousel-inner {
         padding-top: 20px;
     }
 }
