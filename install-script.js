@@ -61,3 +61,19 @@ if (appSliderCommunApp && prevBtnCommunApp && nextBtnCommunApp) {
 } 
 
 
+function toggleIcon(element) {
+  const iconContainer = element.querySelector('.toggle-icon');
+  const isBookmarkIcon = iconContainer.tagName.toLowerCase() === 'i';
+
+  if (isBookmarkIcon) {
+      // Switch back to the original image
+      iconContainer.outerHTML = `
+          <img src="./assets/icon/save-instagram.png" alt="" class="responsive-img toggle-icon">
+      `;
+  } else {
+      // Switch to the font-awesome icon
+      iconContainer.outerHTML = `
+          <i class="fa-solid fa-bookmark toggle-icon"></i>
+      `;
+  }
+}

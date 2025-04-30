@@ -24,11 +24,28 @@
                 <div class="header-logo">
                     <img src="./assets/Img/logo.png" width="60px" alt="">
                 </div>
-                <div class="d-flex align-items-center gap-4">
-                    <!-- <div class="toggle-btn active">
-                        <input type="checkbox" id="theme-toggle" checked class="cb-value" />
-                        <span class="round-btn"></span>
-                    </div> -->
+                <div class="d-flex align-items-center gap-4 header-window">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/icon/apple-logo.png" alt="apple-logo" class="header-icon header-icon-color">
+                        </button>
+                        <ul class="dropdown-menu p-2">
+                            <li class="header-window-border p-2">
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    <img src="./assets/icon/android.png" alt="android" class="header-icon header-icon-color">
+                                    <!-- <span>Android</span>    -->
+                                </a>
+                            </li>
+                            <li class="header-window-border p-2 mt-2">
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                    <img src="./assets/icon/windows.png" alt="windows" class="header-icon header-icon-color">
+                                    <!-- <span>Windows</span>    -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
                     <div class="search-input position-relative">
                         <input type="search" class="text-white" placeholder="search app">
                         <button class="position-absolute search-button"><i
@@ -49,10 +66,7 @@
                             <div class="menu">
                                 <ul class="p-0">
                                     <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                                    <li><a href="SigIn.html"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign In</a></li>
                                     <li class="ps-3">
                                         <div class="toggle-btn active">
                                             <input type="checkbox" id="theme-toggle" checked class="cb-value" />

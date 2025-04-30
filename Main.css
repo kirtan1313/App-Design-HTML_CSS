@@ -720,8 +720,8 @@ nav {
     display: flex;
 }
 .slider-button {
-    background-color: var(--game-bg-color);
-    color: var(--text-color);
+    background-color: blue;
+    color: white;
     font-size: 30px;
     font-weight: 700;
     border: none;
@@ -782,7 +782,7 @@ nav {
     width: 350px;
     padding: 20px;
     text-align: center;
-    border: 1px solid #28282c !important;
+    border: 1px solid #a1a1ae !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1171,8 +1171,14 @@ nav {
     font-size: 14px;
     color: gray;
     font-weight: 500;
+    /* line-height: 3px; */
 }
-
+.about-text-content{
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    line-height: 20px;
+}
 .about-hashtag {
     border: 1px solid black;
     padding: 2px 10px;
@@ -1282,7 +1288,7 @@ nav {
 .offcanvas {
     background-color: #f8f9fa; 
     color: #343a40; 
-    width: 280px; 
+    width: 280px !important; 
 }
 .off-pad{
     
@@ -1385,8 +1391,160 @@ nav {
     column-gap: 20px;
 }
 
-.additional-section{
-    background-color: var(--game-bg-color);
+
+
+
+/* Icon styling */
+.header-icon-color {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    background-color: var(--bg-color, #ffffff) !important;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 25px !important;
+    padding: 8px;
+}
+
+/* List items and hover effects */
+.header-window-border {
+    border-radius: 8px;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.header-window-border:hover {
+    border: 2px solid #007bff;
+    background-color: var(--hover-bg-color, #f8f9fa) !important;
+    
+}
+
+.header-window-border span{
+    color: var(--text-color) !important;
+}
+/* Dropdown toggle caret */
+.dropdown-toggle::after {
+    margin-left: 8px;
+    color: #007bff;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color, #000);
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.dropdown-item:hover {
+    color: #007bff;
+}
+.responsive-img{
+    width: 16px;
+}
+.progress{
+    margin-bottom: 10px;
+}
+.information-text{
+    font-size: 13px;
 }
 
 
+
+
+/* Wrapper and Page Styling */
+.signin-main-page-wrapper {
+    height: 100vh;
+    background-color: #F1F5F9;
+}
+
+.signin-main-page {
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+}
+
+/* Left Section Styling */
+.sign-in-left {
+    background-color:  #a2c8e4; 
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 100%;
+}
+
+.sign-in-left .logo-img {
+    width: 150px;
+    height: auto;
+}
+
+.sign-in-left h2 {
+    font-size: 24px;
+}
+
+.sign-in-left p {
+    font-size: 14px;
+}
+
+.register {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 120px;
+    transition: 0.3s ease;
+}
+
+.register:hover {
+    background-color: white;
+    color: #0D47A1;
+}
+
+/* Right Section Styling */
+
+.sign-in-right input {
+    border: 1px solid #B0BEC5;
+    font-size: 14px;
+}
+
+.sign-in-right button {
+    padding: 10px 0;
+}
+
+
+/* Styling for input fields */
+form .form-control {
+    font-size: 14px;
+    border: 1px solid #B0BEC5;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Styling for the icons inside inputs */
+.input-icon {
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #90A4AE; 
+    pointer-events: none; 
+}
+
+/* Hover effect for inputs */
+form .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.signin-nav-icon {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+.signin-nav-icon:hover {
+    transform: scale(1.2);
+}

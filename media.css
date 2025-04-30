@@ -182,6 +182,16 @@
     .additional-under-content{
         padding-top: 10px;
     }
+    .sign-in-right{
+        background-color: #daeaf5;
+        height: 437px;
+    }
+    .sign-in-right img{
+        width: 200px;
+    }
+    .signin-nav-icon img{
+        width: 30px;
+    }
 }
 
 
@@ -320,6 +330,16 @@
     .footer-nav-link{
         padding-top: 35px;
     }
+    .sign-in-right{
+        background-color: #daeaf5;
+        height: 437px;
+    }
+    .sign-in-right img{
+        width: 200px;
+    }
+    .signin-nav-icon img{
+        width: 30px;
+    }
 }
 
 
@@ -441,6 +461,7 @@
     .About-App-Section {
         padding-top: 50px;
     }
+
 }
 
 
