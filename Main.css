@@ -81,13 +81,16 @@ button {
 }
 
 .font-22 {
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .font-24 {
     font-size: 24px;
 }
 
+.font-28 {
+    font-size: 28px;
+}
 .container {
     max-width: 75% !important;
     width: 75% !important;
@@ -135,10 +138,12 @@ nav {
     opacity: .6;
     color: var(--text-color);
 }
-
+.btn:hover{
+    background-color: transparent !important;
+} 
 .profile .img-box {
     position: relative;
-    width: 48px;
+    min-width: 48px;
     height: 48px;
     border-radius: 50%;
     overflow: hidden;
@@ -202,93 +207,101 @@ nav {
     display: flex;
     align-items: center;
     padding: 15px 20px;
-    gap: 6px;
+    /* gap: 6px; */
 }
 
 .menu ul li a i {
     font-size: 1.2em;
 }
 
-
-/* header css */
-
 .header-main {
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
     background-color: var(--bg-color);
-    position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     top: 0;
 }
-
-.search-input input {
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: var(--bg-color);
-    border: 1px solid #43434a;
-    outline: none;
-    text-indent: 20px;
-}
-
-.header-logo img {
-    background: #ffff;
-    padding: 5px;
-    border-radius: 12px;
-}
-
-.search-button {
-    right: 17px;
-    top: 8px;
-}
-
-.search-button i {
-    color: var(--text-color);
-}
-
-.toggle-btn {
-    width: 80px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 50px;
-    display: inline-block;
-    position: relative;
-    background: url(./assets/Img/svg/aapple.svg) no-repeat 45px center #008bff;
-    cursor: pointer;
-    transition: background-color 0.4s ease-in-out;
-}
-
-.toggle-btn.active {
-    background: url(./assets/Img/svg/androide.svg) no-repeat 14px center #2ecc71;
-}
-
-.toggle-btn.active .round-btn {
-    left: 45px;
-}
-
-.toggle-btn .round-btn {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    left: 5px;
-    top: 37%;
-    margin-top: -15px;
-    transition: all 0.3s ease-in-out;
-}
-
-.toggle-btn .cb-value {
-    position: absolute;
+.search-overlay {
+    top: 0;
     left: 0;
-    right: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    z-index: 9;
-    cursor: pointer;
+    background-color: var(--bg-color);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
 }
+
+.search-overlay .form-control,
+.search-overlay .form-control:focus{
+    background-color: var(--game-bg-color);
+}
+.search-overlay .form-control::placeholder,
+.search-overlay .form-control:focus{
+    color: var(--text-color) !important;
+}
+.search-overlay .form-control:focus{
+  box-shadow: none !important;
+  border-color: #dee2e6 !important;
+}
+
+.header-logo img{
+    width: 160px;
+    height: auto;
+}
+.search-bar {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.serach-main{
+    background-color: var(--secondary-bg);
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.close-search {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-left: 10px;
+}
+
+
+.profile-manu {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+}
+
+
+/* Styling for theme options */
+.theme-option {
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+}
+
+
 
 .made-with-love {
     position: fixed;
@@ -320,9 +333,10 @@ nav {
 }
 
 /* main css */
-.main-padding-top{
-    padding-top: 50px;
+.main-padding-top {
+    padding-top: 120px;
 }
+
 .category-tab .nav-item .nav-link {
     color: var(--text-color);
     border-radius: 50px;
@@ -578,13 +592,13 @@ nav {
 .carousel-control-next {
     right: 10px;
     width: 40px !important;
-    height: 40px;
+    height: 40px !important;
 }
 
 .carousel-control-prev {
     left: 92% !important;
     width: 40px !important;
-    height: 40px;
+    height: 40px !important;
 }
 
 .discover-left {
@@ -684,9 +698,12 @@ nav {
     min-width: 140px;
     max-width: 140px;
     text-align: center;
-    background-color: var(--game-bg-color);
     border-radius: 10px;
     padding: 10px;
+}
+
+.app-card:hover {
+    background-color: var(--game-bg-color);
 }
 
 .app-card img {
@@ -715,12 +732,14 @@ nav {
     color: gold;
     margin-right: 5px;
 }
-.slider-controls{
+
+.slider-controls {
     gap: 10px;
     display: flex;
 }
+
 .slider-button {
-    background-color: blue;
+    background-color: #00ABE9;
     color: white;
     font-size: 30px;
     font-weight: 700;
@@ -808,7 +827,8 @@ nav {
 
 .Marquee {
     background: var(--card-app-bg);
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 80px;
     box-sizing: border-box;
     color: white;
     font-weight: 300;
@@ -1040,34 +1060,40 @@ nav {
     padding: 2px 0;
     cursor: pointer;
 }
+
 .pages-li:hover {
     color: blue;
 }
 
 
 /* Install Pages */
-.main-padding-top-app-section{
+.main-padding-top-app-section {
     padding-top: 6%;
 }
 
-.modal-body img{
+.modal-body img {
     width: 100%;
     height: 100%;
 }
 
-.small-size-img img{
+.small-size-img img {
     width: 100px;
     height: 100px;
 }
+
 .page-container {
     padding: 0 70px;
     margin: 0 !important;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
+}
+.page-container-padding{
+    padding: 0 25px;
 }
 
 .install-heading {
     font-size: 40px;
     font-weight: 500;
+    color: var(--text-color);
 }
 
 .install-small-text {
@@ -1080,6 +1106,7 @@ nav {
 
 .text-main-rate {
     font-size: 14px;
+    color: var(--text-color);
 }
 
 .install-download {
@@ -1087,35 +1114,42 @@ nav {
     color: gray;
     font-weight: 400;
 }
-.dowlond-btn{
+
+.dowlond-btn {
     width: 220px;
 }
-.dowlond-text-small{
+
+.dowlond-text-small {
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 2px;
 }
+
 .app-installation-img {
     width: 260px;
 }
 
-.slider-img img{
+.slider-img img {
     width: 60px;
     height: 60px;
 }
-.slde-main-text{
+
+.slde-main-text {
     font-size: 20px;
     font-weight: 500;
+    color: var(--text-color);
 }
-.slider-main-small-text{
+
+.slider-main-small-text {
     font-size: 12px;
     font-weight: 500;
 }
-.slider-app-wraper{
+
+.slider-app-wraper {
     padding: 15px 0;
 }
 
-.slider-app-wraper:hover{
+.slider-app-wraper:hover {
     background-color: var(--game-bg-color);
     border-radius: 10px;
 }
@@ -1171,14 +1205,15 @@ nav {
     font-size: 14px;
     color: gray;
     font-weight: 500;
-    /* line-height: 3px; */
 }
-.about-text-content{
+
+.about-text-content {
     font-size: 14px;
     color: gray;
     font-weight: 500;
     line-height: 20px;
 }
+
 .about-hashtag {
     border: 1px solid black;
     padding: 2px 10px;
@@ -1191,90 +1226,97 @@ nav {
 /* Custom Review Tab Styles */
 /* Review Tab Styles */
 .review-nav .review-nav-link {
-    background-color: #f8f9fa;
-    color: #000;
+    background-color:var(--game-bg-color);
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .review-nav .review-nav-link.active {
+}
+
+.review-nav .review-nav-link.active {
     background-color: #007bff;
-    color: #fff;
+    color: white;
     font-weight: 600;
     box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
-  }
-  
-  .review-nav .review-nav-link:hover {
-    background-color: #e9ecef;
-    color: #000;
-  }
-  
-  /* Review Content */
-  .review-content {
+}
+
+.review-nav .review-nav-link:hover {
+    background-color: var(--game-bg-color);
+    color: var(--text-color);
+}
+
+/* Review Content */
+.review-content {
     border-radius: 8px;
-    background-color: #fff;
-  }
-  
-  /* Rating Section */
-  .review-rate {
+}
+
+/* Rating Section */
+.review-rate {
     color: #007bff;
-  }
-  
-  .review-star {
+}
+
+.review-star {
     font-size: 1rem;
-  }
-  
-  .review-lakh {
+}
+
+.review-lakh {
     font-size: 0.9rem;
-  }
-  
-  /* Progress Bars */
-  .progress-bar {
+    color: var(--text-color);
+}
+
+/* Progress Bars */
+.progress-bar {
     font-size: 0.8rem;
-  }
-  
-.review-rate{
+}
+
+.review-rate {
     font-size: 50px;
 }
+
 .review-star {
     font-size: 8px;
 }
-.reviw-lakh{
+
+.reviw-lakh {
     font-size: 10px;
     font-weight: 500;
     color: gray;
 }
-.progress{
+
+.progress {
     height: 10px !important;
 }
 
-.coment-date{
+.coment-date {
     font-size: 14px;
+    color: var(--text-color);
 }
-.review-see:hover{
+
+.review-see:hover {
     background-color: #f5f5f5;
     width: 150px;
     border-radius: 10px;
 }
 
-.footer-font-size{
+.footer-font-size {
     font-size: 14px;
 }
-.footer-font-hover{
-    color: gray ;
+
+.footer-font-hover {
+    color: gray;
     font-weight: 500;
 }
+
 .footer-font-hover:hover,
-.footer-nav-size:hover{
+.footer-nav-size:hover {
     color: var(--primary-color);
 }
 
-.footer-font-size1{
+.footer-font-size1 {
     padding-left: 100px !important;
 }
 
-.footer-nav-size{
+.footer-nav-size {
     font-size: 14px;
     font-weight: 500;
     color: gray;
@@ -1286,12 +1328,13 @@ nav {
 }
 
 .offcanvas {
-    background-color: #f8f9fa; 
-    color: #343a40; 
-    width: 280px !important; 
+    background-color: #f8f9fa;
+    color: #343a40;
+    width: 280px !important;
 }
-.off-pad{
-    
+
+.off-pad {
+
     padding: 10px 10px 10px 38px;
 }
 
@@ -1328,7 +1371,7 @@ nav {
 .offcanvas-content-wrap:hover,
 .offcanvas-content-wrap-2:hover,
 .offcanvas-text:hover {
-    background-color: #e9ecef; 
+    background-color: #e9ecef;
     border-radius: 4px;
     color: #007bff;
 }
@@ -1349,11 +1392,13 @@ nav {
     margin: 10px 0;
     border-color: #dee2e6;
 }
-.footer-nav-icon img{
+
+.footer-nav-icon img {
     width: 30px;
     height: 30px;
 }
-.btn{
+
+.btn {
     border: 0 !important;
     border-radius: 0 !important;
     border-width: 0 !important;
@@ -1418,133 +1463,236 @@ nav {
 
 .header-window-border:hover {
     border: 2px solid #007bff;
-    background-color: var(--hover-bg-color, #f8f9fa) !important;
-    
+    background-color: black !important;
+
 }
 
-.header-window-border span{
-    color: var(--text-color) !important;
-}
 /* Dropdown toggle caret */
 .dropdown-toggle::after {
-    margin-left: 8px;
+    margin-left: 5px !important;
     color: #007bff;
 }
 
-/* Dropdown item styling */
+
 .dropdown-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--text-color, #000);
-    font-weight: 500;
-    padding: 5px 10px;
+    background-color: transparent !important;
+    color: inherit !important;
+    transition: none !important;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .dropdown-item:hover {
-    color: #007bff;
+    background-color: transparent !important;
+    color: inherit !important;
 }
-.responsive-img{
+
+/* Active item appearance */
+.dropdown-item.active {
+    background-color: #007bff;
+}
+
+
+.responsive-img {
     width: 16px;
 }
-.progress{
+
+.progress {
     margin-bottom: 10px;
 }
-.information-text{
+
+.information-text {
     font-size: 13px;
 }
 
 
-
-
-/* Wrapper and Page Styling */
 .signin-main-page-wrapper {
     height: 100vh;
-    background-color: #F1F5F9;
-}
-
-.signin-main-page {
-    width: 800px;
-    height: 400px;
-    background-color: white;
     display: flex;
+    width: 100%;
 }
 
-/* Left Section Styling */
+/* Left Section */
 .sign-in-left {
-    background-color:  #a2c8e4; 
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    position: relative;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff, #7b89fe);
+    overflow: hidden;
     height: 100%;
 }
 
-.sign-in-left .logo-img {
-    width: 150px;
+/* Right Section */
+.sign-in-right {
+    height: 100%;
+}
+
+/* Background Animation */
+.background-animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-animation .particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.background-animation .particles span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: float 5s infinite ease-in-out;
+    opacity: 0.6;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(10px); }
+    100% { transform: translateY(0) translateX(0); }
+}
+
+.background-animation .particles span:nth-child(1) { top: 20%; left: 10%; animation-delay: 1s; }
+.background-animation .particles span:nth-child(2) { top: 40%; left: 50%; animation-delay: 1s; }
+.background-animation .particles span:nth-child(3) { top: 56%; left: 74%; animation-delay: 1s; }
+.background-animation .particles span:nth-child(4) { top: 10%; left: 70%; animation-delay: 1s; }
+.background-animation .particles span:nth-child(5) { top: 80%; left: 20%; animation-delay: 1s; }
+.background-animation .particles span:nth-child(6) { top: 50%; left: 20%; animation-delay: 1s; }
+.background-animation .particles span:nth-child(7) { top: 90%; left: 82%; animation-delay: 1s; }
+
+/* Form Styling */
+.sign-in-right .form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sign-in-right .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+.logo-img-register{
+    width: 200px;
     height: auto;
 }
-
-.sign-in-left h2 {
-    font-size: 24px;
+.registre-btn{
+    border: 1px solid white;
 }
-
-.sign-in-left p {
-    font-size: 14px;
+.login-btn{
+    background-color:  #00ABE9;
+    color: white;
 }
-
-.register {
-    background-color: transparent;
-    border: 2px solid white;
-    width: 120px;
-    transition: 0.3s ease;
-}
-
-.register:hover {
-    background-color: white;
-    color: #0D47A1;
-}
-
-/* Right Section Styling */
-
-.sign-in-right input {
-    border: 1px solid #B0BEC5;
-    font-size: 14px;
-}
-
-.sign-in-right button {
-    padding: 10px 0;
+.share-text-color,
+.add-wislist-text-color span{
+   color:  #00ABE9;
 }
 
 
-/* Styling for input fields */
-form .form-control {
-    font-size: 14px;
-    border: 1px solid #B0BEC5;
-    transition: border-color 0.3s ease-in-out;
+
+ 
+
+/* Wishlist Section */
+.wishlist-section {
+    padding-top: 120px;
+}
+.wishlist-tabs{
+    height: fit-content;
+    border-right: 1px solid gray;
+}
+.wishlist-tabs a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
 }
 
-/* Styling for the icons inside inputs */
-.input-icon {
-    top: 50%;
-    left: 10px; 
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #90A4AE; 
-    pointer-events: none; 
+.wishlist-tabs a:hover,
+.wishlist-tabs a.wishlist-active-tab {
+    color: #007bff;
+    border-left: 3px solid #007bff;
 }
 
-/* Hover effect for inputs */
-form .form-control:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+.header-search,
+.wishlist-section,
+.review-rating-section-heading,
+.about-heading,
+.hamburger-menu i,
+.lXlx5,
+.new-section h2,
+.additional-section-heading,
+.carousal-heading,
+.carsol-yes-no,
+.Slide-app-section-heading,
+.footer-nav-heading,
+.additional-mini-head,
+.rating-headig,
+.header-window-border span{
+    color: var(--text-color) !important;
 }
 
-.signin-nav-icon {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out; 
+.additional-mini-head{
+    padding-bottom: 5px;
+}
+
+
+/* Base styles for the rating component */
+.install-rating .install-star {
+    float: right;
     cursor: pointer;
-}
+    font-size: 30px;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .install-rating .install-star:before {
+    content: '★'; 
+  }
+  
+ 
+  .install-rating .install-star:hover,
+  .install-rating .install-star:hover ~ .install-star {
+    color: #ff9e0b;
+  }
+  
+  
+  .install-rating input:checked + .install-star,
+  .install-rating input:checked + .install-star:hover,
+  .install-rating input:checked + .install-star:hover ~ .install-star,
+  .install-rating input:checked ~ .install-star {
+    color: #ffa723;
+  }
+  
 
-.signin-nav-icon:hover {
-    transform: scale(1.2);
-}
+  .install-rating input:checked ~ .install-star:hover {
+    color: #e58e09;
+  }
+
+  
+
+
+
+
+
+
+
+

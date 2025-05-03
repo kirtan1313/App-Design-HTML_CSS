@@ -7,37 +7,79 @@
     <title>Install App</title>
     <link rel="stylesheet" href="./Main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
     <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
 
+
+
+
     <header>
-        <div class="header-main px-md-5 px-3 py-3">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="header-logo">
-                    <img src="./assets/Img/logo.png" width="60px" alt="">
+        <div class=" header-main px-lg-5  py-3 position-fixed">
+            <div class="page-container-padding d-flex align-items-center">
+                <div class="col-6 col-md-4 gap-2 gap-md-4 d-flex align-items-center">
+                    
+
+                    <!-- Logo -->
+                    <div class="header-logo install-logo">
+                        <img src="./assets/Img/logo-r.png"  alt="Company Logo">
+                    </div>
                 </div>
-                <div class="d-flex align-items-center gap-4">
-                    <div class="toggle-btn t-b active">
-                        <input type="checkbox" id="theme-toggle-2" class="cb-value" />
-                        <span class="round-btn"></span>
+
+                <div class="col-6 col-md-8 d-flex align-items-center justify-content-end gap-2 gap-md-4">
+                    <!-- Right Section -->
+                    <div class="d-flex align-items-center justify-content-center serach-main">
+                        <!-- Search Input -->
+                        <div class="search-overlay  position-absolute d-none" id="search-input-box">
+                            <input type="search" class="form-control search-bar" placeholder="Type to search...">
+                            <button class="close-search cursor" id="close-search-btn">&times;</button>
+                        </div>
+
+                        <!-- Search Icon -->
+                        <button class="header-search " id="search-icon-btn">
+                            <i class="fa-solid fa-magnifying-glass font-18"></i>
+                        </button>
                     </div>
-                    <div class="search-input position-relative">
-                        <input type="search" class="text-white" placeholder="search app">
-                        <button class="position-absolute search-button"><i
-                                class="fa-solid fa-magnifying-glass font-18"></i></button>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle d-flex align-items-center" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/icon/apple-logo.png" alt="Selected Icon" id="selected-icon"
+                                class="header-icon">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/android.png">
+                                    <img src="./assets/icon/android.png" alt="Android Icon" class="header-icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/apple-logo.png">
+                                    <img src="./assets/icon/apple-logo.png" alt="Apple Icon" class="header-icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/windows.png">
+                                    <img src="./assets/icon/windows.png" alt="Windows Icon" class="header-icon">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+
+                    <!-- Profile Menu -->
                     <div class="profile-manu">
                         <nav>
                             <div class="menu-toggle"></div>
                             <div class="profile">
-                                <div class="user">
-                                    <h3 class="">Katherine Cooper</h3>
+                                <div class="user d-none d-md-block">
+                                    <h3>Katherine Cooper</h3>
                                     <p class="m-0 pt-2 ">@probablykat66</p>
                                 </div>
                                 <div class="img-box">
@@ -47,10 +89,10 @@
                             <div class="menu">
                                 <ul class="p-0">
                                     <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
-                                    <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="SigIn.html"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign In</a></li>
+                                    <li id="dark-mode-btn" class="theme-option">Dark Mode</li>
+                                    <li id="light-mode-btn" class="theme-option">Light Mode</li>
                                 </ul>
                             </div>
                         </nav>
@@ -79,7 +121,7 @@
                         <li>
                             <div class=" text-main-rate fw-bold d-flex align-items-center justify-content-center">
                                 4.5
-                                <span class="install-rate"><i class="fa-solid fa-star"></i></span>
+                                <span class="install-rate"><i class="fa-solid fa-star text-warning"></i></span>
                             </div>
                             <div class="install-download ps-2">44.5L Reviews</div>
                         </li>
@@ -87,7 +129,7 @@
                         <li>
                             <div class=" text-main-rate fw-bold d-flex align-items-center justify-content-center">
                                 10Cr+
-                                <span class="install-rate ps-2"><i class="fa-solid fa-star"></i></span>
+
                             </div>
                             <div class="install-download">Downloads</div>
                         </li>
@@ -95,20 +137,20 @@
                         <li>
                             <div class=" text-main-rate fw-bold d-flex align-items-center justify-content-center">
                                 3+
-                                <span class="install-rate ps-2"><i class="fa-solid fa-star"></i></span>
+
                             </div>
-                            <div class="install-download">Rated for 3+inf</div>
+                            <div class="install-download">Rated for 3+</div>
                         </li>
                     </ul>
 
                     <div class="d-flex gap-4 pt-3 responsive-btn cursor">
-                        <button type="button" class="btn rounded text-white bg-primary px-5">Install</button>
+                        <button type="button" class="login-btn rounded px-5">Install</button>
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            <div class="text-primary d-flex align-items-center">
+                            <div class=" d-flex align-items-center">
                                 <span class="fs-4">
                                     <img src="./assets/icon/share.png" alt="share" class="responsive-img">
                                 </span>
-                                <span class="ps-2">Share</span>
+                                <span class="ps-2 share-text-color">Share</span>
                             </div>
                         </button>
 
@@ -123,7 +165,7 @@
                                                 style="width: 50px; height: 50px; object-fit: cover;">
                                             <div>
                                                 <h5 class="mb-0">Opera Mini - fast web browser</h5>
-                                                <small class="text-muted">Share this app</small>
+                                                <small class="">Share this app</small>
                                             </div>
                                         </div>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -163,7 +205,7 @@
                             </div>
                         </div>
 
-                        <div class="text-primary d-flex align-items-center" onclick="toggleIcon(this)">
+                        <div class="add-wislist-text-color d-flex align-items-center" onclick="toggleIcon(this)">
                             <span>
                                 <img src="./assets/icon/save-instagram.png" alt="" class="responsive-img toggle-icon">
                             </span>
@@ -180,7 +222,7 @@
                 <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
 
                     <div class="About-App-Section ">
-                        <div class="fs-4 fw-bold d-flex align-items-center">About This App </div>
+                        <div class="about-heading fs-4 fw-bold d-flex align-items-center">About This App </div>
 
                         <p class=" about-text-content pt-3">
                             Photo Editor Pro offers everything you want to edit pictures on this pics art trip. 500+
@@ -196,7 +238,7 @@
                         <div class="about-text">✅ Remove: Clean up anything you don’t want, like watermarks, LOGO,
                             and
                             passers-by.</div>
-                        <div class="lXlx5 pt-4 text-dark">Updated on</div>
+                        <div class="lXlx5 pt-4">Updated on</div>
                         <div class="xg1aie text-secondary">10 Apr 2025</div>
                     </div>
 
@@ -290,10 +332,10 @@
                     </div>
 
                     <div class="d-none d-lg-block additional-section rounded my-5 p-3">
-                        <div class="fs-5 fw-bold d-flex align-items-center pb-3">
+                        <div class=" additional-section-heading fs-5 fw-bold d-flex align-items-center pb-3">
                             Information about Quicksilver 2.5.1
                         </div>
-                        
+
 
                         <div class="information-content pt-4">
                             <div class="pb-5 d-flex gap-5 justify-content-between">
@@ -302,7 +344,7 @@
                                         <img src="./assets/icon/licensing (1).png" alt="licensing">
                                     </div>
                                     <div class="lh-1">
-                                        <div>License</div>
+                                        <div class="additional-mini-head">License</div>
                                         <div class="text-secondary information-text">Free</div>
                                     </div>
                                 </div>
@@ -312,7 +354,7 @@
                                         <img src="./assets/icon/list.png" alt="licensing">
                                     </div>
                                     <div class="lh-1">
-                                        <div>Category</div>
+                                        <div class="additional-mini-head">Category</div>
                                         <div class="text-secondary information-text">Miscellaneous</div>
                                     </div>
                                 </div>
@@ -324,7 +366,7 @@
                                         <img src="./assets/icon/system.png" alt="licensing">
                                     </div>
                                     <div class="lh-1">
-                                        <div>Op. System</div>
+                                        <div class="additional-mini-head">Op. System</div>
                                         <div class="text-secondary information-text">Mac</div>
                                     </div>
                                 </div>
@@ -334,7 +376,7 @@
                                         <img src="./assets/icon/calendar.png" alt="licensing">
                                     </div>
                                     <div class="lh-1">
-                                        <div>Date</div>
+                                        <div class="additional-mini-head">Date</div>
                                         <div class="text-secondary information-text">Apr 23, 2025</div>
                                     </div>
                                 </div>
@@ -346,7 +388,7 @@
                                         <img src="./assets/icon/world.png" alt="licensing">
                                     </div>
                                     <div class="lh-1">
-                                        <div>Language</div>
+                                        <div class="additional-mini-head">Language</div>
                                         <div class="text-secondary information-text">English</div>
                                     </div>
                                 </div>
@@ -356,7 +398,7 @@
                                         <img src="./assets/icon/download.png" alt="licensing">
                                     </div>
                                     <div class="lh-1">
-                                        <div>Downloads</div>
+                                        <div class="additional-mini-head">Downloads</div>
                                         <div class="text-secondary information-text">4,565</div>
                                     </div>
                                 </div>
@@ -365,8 +407,9 @@
                     </div>
 
                     <div class="review-rating-section">
-                        <div class="fs-4 fw-bold d-flex align-items-center">Ratings and reviews
-                            
+                        <div class="review-rating-section-heading fs-4 fw-bold d-flex align-items-center">Ratings and
+                            reviews
+
                         </div>
 
                         <ul class="nav nav-pills review-nav pt-4 gap-3">
@@ -411,7 +454,7 @@
                                             <span><i
                                                     class="fa-solid fa-star-half-stroke review-star text-warning"></i></span>
                                         </div>
-                                        <div class="review-lakh small text-muted">43.9L Reviews</div>
+                                        <div class="review-lakh small">43.9L Reviews</div>
                                     </div>
                                     <div class="col-10">
                                         <div class="progress">
@@ -452,7 +495,49 @@
                                             <span><i
                                                     class="fa-solid fa-star-half-stroke review-star text-warning"></i></span>
                                         </div>
-                                        <div class="review-lakh small text-muted">43.9L Reviews</div>
+                                        <div class="review-lakh small">43.9L Reviews</div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="progress mb-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;"
+                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress mb-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%;"
+                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress mb-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%;"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress mb-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 35%;"
+                                                aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress mb-2">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div id="review-tablet" class="tab-pane fade" role="tabpanel"
+                                aria-labelledby="review-tablet-tab">
+                                <div class="align-items-center d-flex">
+                                    <div class="col-2">
+                                        <div class="review-rate display-4 fw-bold">4.5</div>
+                                        <div class="pt-1 review-star">
+                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
+                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
+                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
+                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
+                                            <span><i
+                                                    class="fa-solid fa-star-half-stroke review-star text-warning"></i></span>
+                                        </div>
+                                        <div class="review-lakh small ">43.9L Reviews</div>
                                     </div>
                                     <div class="col-10">
                                         <div class="progress mb-2">
@@ -478,46 +563,24 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="my-4 d-flex align-items-center gap-5">
+                            <div class="rating-headig font-18">Rating This App</div>
+                            <div class="install-rating d-flex   align-items-center ">
+                                <input value="1" name="rate" id="star1" type="radio" class="d-none">
+                                <label title="1 star" for="star1" class="install-star"></label>
 
+                                <input value="5" name="rate" id="star5" type="radio" class="d-none">
+                                <label title="5 stars" for="star5" class="install-star"></label>
 
-                            <div id="review-tablet" class="tab-pane fade" role="tabpanel"
-                                aria-labelledby="review-tablet-tab">
-                                <div class="align-items-center d-flex">
-                                    <div class="col-2">
-                                        <div class="review-rate display-4 fw-bold">4.5</div>
-                                        <div class="pt-1 review-star">
-                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
-                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
-                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
-                                            <span><i class="fa-solid fa-star review-star text-warning"></i></span>
-                                            <span><i
-                                                    class="fa-solid fa-star-half-stroke review-star text-warning"></i></span>
-                                        </div>
-                                        <div class="review-lakh small text-muted">43.9L Reviews</div>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="progress mb-2">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="progress mb-2">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%;"
-                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="progress mb-2">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%;"
-                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="progress mb-2">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 35%;"
-                                                aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="progress mb-2">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <input value="4" name="rate" id="star4" type="radio" class="d-none">
+                                <label title="4 stars" for="star4" class="install-star"></label>
+
+                                <input value="3" name="rate" id="star3" type="radio" class="d-none" checked>
+                                <label title="3 stars" for="star3" class="install-star"></label>
+
+                                <input value="2" name="rate" id="star2" type="radio" class="d-none">
+                                <label title="2 stars" for="star2" class="install-star"></label>
                             </div>
                         </div>
                     </div>
@@ -553,14 +616,14 @@
 
                     <div id="reviewCarousel" class="carousel slide comment-section py-5" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            
+
                             <div class="carousel-item active">
                                 <div class="pb-5 cursor">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="gap-3 d-flex align-items-center">
                                             <div class="bg-danger bg-gradient text-white py-2 px-3 rounded-circle">P
                                             </div>
-                                            <div>Paradise Huntress</div>
+                                            <div class="carousal-heading">Paradise Huntress</div>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center gap-3 pt-2">
@@ -584,21 +647,21 @@
                                     <p class="text-secondary pt-2 coment-date">3,794 people found this review helpful
                                     </p>
                                     <div class="d-flex gap-3 align-items-center">
-                                        <div class="coment-date text-secondary">Did you find this helpful?</div>
+                                        <div class="coment-date">Did you find this helpful?</div>
                                         <div class="d-flex align-items-center gap-2 cursor">
-                                            <div class="border border-1 py-0 px-3 rounded-pill">Yes</div>
-                                            <div class="border border-1 py-0 px-3 rounded-pill">No</div>
+                                            <div class="carsol-yes-no border border-1 py-0 px-3 rounded-pill">Yes</div>
+                                            <div class="carsol-yes-no border border-1 py-0 px-3 rounded-pill">No</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                           
+
                             <div class="carousel-item">
                                 <div class="pb-5 cursor">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="gap-3 d-flex align-items-center">
                                             <div class="bg-primary text-white py-2 px-3 rounded-circle">D</div>
-                                            <div>Debbie Futrell-Hall</div>
+                                            <div class="carousal-heading">Debbie Futrell-Hall</div>
                                         </div>
                                         <div class="pe-3">
                                             <i class="fa-solid fa-ellipsis-vertical fs-5"></i>
@@ -625,31 +688,33 @@
                                     <p class="text-secondary pt-2 coment-date">3,794 people found this review helpful
                                     </p>
                                     <div class="d-flex gap-3 align-items-center">
-                                        <div class="coment-date text-secondary">Did you find this helpful?</div>
+                                        <div class="coment-date ">Did you find this helpful?</div>
                                         <div class="d-flex align-items-center gap-2 cursor">
-                                            <div class="border border-1 py-0 px-3 rounded-pill">Yes</div>
-                                            <div class="border border-1 py-0 px-3 rounded-pill">No</div>
+                                            <div class="carsol-yes-no border border-1 py-0 px-3 rounded-pill">Yes</div>
+                                            <div class="carsol-yes-no border border-1 py-0 px-3 rounded-pill">No</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
-                       
-                        <button style="opacity: 1; z-index: 0;  background-color: blue;" class=" slider-button carousel-control-prev  rounded-circle me-3"
-                            type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
-                            <span class="text-white fw-bold fs-2 ">←</span>
+
+                        <button style="opacity: 1; z-index: 0;  background-color: #00ABE9;"
+                            class=" slider-button carousel-control-prev  rounded-circle me-3" type="button"
+                            data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                            <span class="text-white fw-bold  ">←</span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button style="opacity: 1; z-index: 0; color: white; background-color: blue;" class="slider-button carousel-control-next  rounded-circle ms-3"
-                            type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
-                            <span class="text-white fw-bold fs-2">→</span>
+                        <button style="opacity: 1; z-index: 0; color: white; background-color: #00ABE9;"
+                            class="slider-button carousel-control-next  rounded-circle ms-3" type="button"
+                            data-bs-target="#reviewCarousel" data-bs-slide="next">
+                            <span class="text-white fw-bold">→</span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
 
                     <div class="Slide-app-section d-none d-lg-block">
-                        <div class="fs-4 fw-bold d-flex align-items-center">Similur App
+                        <div class="Slide-app-section-heading fs-4 fw-bold d-flex align-items-center">Similur App
                             <a href="Index.html">
                                 <span class="ms-3 py-2 px-3 text-secondary rounded-circle about-aerrow">→</span>
                             </a>
@@ -1037,7 +1102,7 @@
                     </div>
                     <div class="d-flex col-12 col-md-6 col-lg-6 col-xl-6 footer-nav-link">
                         <ul class="footer-font-size cursor ">
-                            <div class="pb-3 text-secondary fs-5">Google Pay</div>
+                            <div class="pb-3 footer-nav-heading fs-5">Google Pay</div>
                             <li class="pb-2 footer-font-hover">
                                 Play Pass
                             </li>
@@ -1048,7 +1113,7 @@
                         </ul>
 
                         <ul class="footer-font-size1 cursor">
-                            <div class="pb-3 text-secondary fs-5">Children and family</div>
+                            <div class="pb-3 footer-nav-heading fs-5">Children and family</div>
                             <li class="pb-2 footer-font-hover">
                                 Play Pass
                             </li>
@@ -1073,26 +1138,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="./install-script.js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 
 </body>
 

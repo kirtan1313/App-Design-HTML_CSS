@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+
+    <link rel="stylesheet" href="Main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="media.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <div class=" header-main px-lg-5  py-1 py-lg-3 position-fixed">
+            <div class="container d-flex align-items-center">
+                <div class="col-6 col-md-4 gap-2 gap-md-4 d-flex align-items-center">
+                    
+
+                    <!-- Logo -->
+                    <div class="header-logo install-logo">
+                        <img src="./assets/Img/logo-r.png"  alt="Company Logo">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-8 d-flex align-items-center justify-content-end gap-2 gap-md-4">
+                    <!-- Right Section -->
+                    <div class="d-flex align-items-center justify-content-center serach-main">
+                        <!-- Search Input -->
+                        <div class="search-overlay  position-absolute d-none" id="search-input-box">
+                            <input type="search" class="form-control search-bar" placeholder="Type to search...">
+                            <button class="close-search cursor" id="close-search-btn">&times;</button>
+                        </div>
+
+                        <!-- Search Icon -->
+                        <button class="header-search " id="search-icon-btn">
+                            <i class="fa-solid fa-magnifying-glass font-18"></i>
+                        </button>
+                    </div>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle d-flex align-items-center" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/icon/apple-logo.png" alt="Selected Icon" id="selected-icon"
+                                class="header-icon">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/android.png">
+                                    <img src="./assets/icon/android.png" alt="Android Icon" class="header-icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/apple-logo.png">
+                                    <img src="./assets/icon/apple-logo.png" alt="Apple Icon" class="header-icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/windows.png">
+                                    <img src="./assets/icon/windows.png" alt="Windows Icon" class="header-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Profile Menu -->
+                    <div class="profile-manu">
+                        <nav>
+                            <div class="menu-toggle"></div>
+                            <div class="profile">
+                                <div class="user d-none d-md-block">
+                                    <h3>Katherine Cooper</h3>
+                                    <p class="m-0 pt-2 ">@probablykat66</p>
+                                </div>
+                                <div class="img-box">
+                                    <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="some user image">
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <ul class="p-0">
+                                    <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                                    <li><a href="SigIn.html"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign In</a></li>
+                                    <li id="dark-mode-btn" class="theme-option">Dark Mode</li>
+                                    <li id="light-mode-btn" class="theme-option">Light Mode</li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container wishlist-section">
+            <h1 class="pb-4 font-28 wishlist-heading">App Wishlist</h1>
+
+            <div class="row wishlist-row pt-5">
+
+                <div class="wishlist-tabs d-flex flex-column col-md-2 col-12">
+                    <a href="#" class="ps-2 mb-3 text-decoration-none">Games</a>
+                    <a href="#" class="ps-2 mb-3 text-decoration-none">Apps</a>
+                    <a href="#" class="ps-2 mb-3 text-decoration-none">Books</a>
+                    <a href="#" class="ps-2 mb-3 text-decoration-none ">Wishlist</a>
+                    <a href="#" class="ps-2 mb-3 text-decoration-none">Devices</a>
+                </div>
+
+
+                <div class="wishlist-app col-12 col-md-10 d-flex flex-wrap gap-3">
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Facebook">
+                            <div class="app-name">Facebook</div>
+                            <div class="rating"><i>★</i> 4.3</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Samsung Wallet">
+                            <div class="app-name">Samsung Wallet</div>
+                            <div class="rating"><i>★</i> 4.1</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (71).webp" alt="Music Player">
+                            <div class="app-name">Music Player</div>
+                            <div class="rating"><i>★</i> 4.2</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Facebook">
+                            <div class="app-name">Facebook</div>
+                            <div class="rating"><i>★</i> 4.3</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Samsung Wallet">
+                            <div class="app-name">Samsung Wallet</div>
+                            <div class="rating"><i>★</i> 4.1</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (71).webp" alt="Music Player">
+                            <div class="app-name">Music Player</div>
+                            <div class="rating"><i>★</i> 4.2</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Facebook">
+                            <div class="app-name">Facebook</div>
+                            <div class="rating"><i>★</i> 4.3</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (70).webp" alt="Samsung Wallet">
+                            <div class="app-name">Samsung Wallet</div>
+                            <div class="rating"><i>★</i> 4.1</div>
+                        </a>
+                    </div>
+                    <div class="app-card">
+                        <a href="install-pages.html">
+                            <img src="./assets/Img/chartImg/unnamed (71).webp" alt="Music Player">
+                            <div class="app-name">Music Player</div>
+                            <div class="rating"><i>★</i> 4.2</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pt-5">
+                <div class="border border-1"></div>
+                <div class="d-flex pt-4 footer-wraper-install">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="footer-img">
+                            <img src="./assets/Img/logo-r.png" alt="logo-r">
+                        </div>
+                        <div class="pt-4 footer-content">
+                            DMT Appstore Private Limited
+
+                        </div>
+                        <div class="footer-con">
+                            (Formerly known as ‘OSLabs Technology (India) Private Limited’)
+                        </div>
+                        <div class="d-flex gap-3 pt-3">
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/snap-icon.webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (5).webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (15).webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (20).webp" alt="" class="rounded">
+                            </span>
+                            <span class="footer-nav-icon">
+                                <img src="./assets/Img/chartImg/unnamed (35).webp" alt="" class="rounded">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex col-12 col-md-6 col-lg-6 col-xl-6 footer-nav-link">
+                        <ul class="footer-font-size cursor ">
+                            <div class="pb-3 footer-nav-heading fs-5">Google Pay</div>
+                            <li class="pb-2 footer-font-hover">
+                                Play Pass
+                            </li>
+                            <li class="pb-2 footer-font-hover">Play Points</li>
+                            <li class="pb-2 footer-font-hover">Gift Card</li>
+                            <li class="pb-2 footer-font-hover">Redeem</li>
+                            <li class="footer-font-hover">Refund Policy</li>
+                        </ul>
+
+                        <ul class="footer-font-size1 cursor">
+                            <div class="pb-3 footer-nav-heading fs-5">Children and family</div>
+                            <li class="pb-2 footer-font-hover">
+                                Play Pass
+                            </li>
+                            <li class="pb-2 footer-font-hover">Parent guide</li>
+                            <li class="pb-2 footer-font-hover">Family sharing</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav pt-4">
+                    <ul class="footer-nav-wrap d-flex align-items-center gap-3 cursor">
+                        <li class="footer-nav-size">Terms of Service</li>
+                        <li class="footer-nav-size">Privacy</li>
+                        <li class="footer-nav-size">About Google Play</li>
+                        <li class="footer-nav-size">Developers</li>
+                        <li class="footer-nav-size">Google Store</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="wishlist.js"></script>
+
+</body>
+
+</html>

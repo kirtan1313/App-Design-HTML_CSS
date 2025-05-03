@@ -17,46 +17,72 @@
 
 <body>
 
-
     <header>
-        <div class="header-main px-md-5 px-3 py-3">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="header-logo">
-                    <img src="./assets/Img/logo.png" width="60px" alt="">
-                </div>
-                <div class="d-flex align-items-center gap-4 header-window">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./assets/icon/apple-logo.png" alt="apple-logo" class="header-icon header-icon-color">
+        <div class=" header-main px-lg-5  py-3 position-fixed">
+            <div class="container d-flex align-items-center">
+                <div class="col-6 col-md-4 gap-2 gap-md-4 d-flex align-items-center">
+                    <!-- Hamburger Icon -->
+                    <div class="hamburger-menu  serach-main d-flex justify-content-center align-items-center">
+                        <button class="" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                            role="button">
+                            <i class="fa-solid fa-bars"></i>
                         </button>
-                        <ul class="dropdown-menu p-2">
-                            <li class="header-window-border p-2">
-                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                    <img src="./assets/icon/android.png" alt="android" class="header-icon header-icon-color">
-                                    <!-- <span>Android</span>    -->
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="header-logo">
+                        <img src="./assets/Img/logo-r.png"  alt="Company Logo">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-8 d-flex align-items-center justify-content-end gap-2 gap-md-4">
+                    <!-- Right Section -->
+                    <div class="d-flex align-items-center justify-content-center serach-main">
+                        <!-- Search Input -->
+                        <div class="search-overlay  position-absolute d-none" id="search-input-box">
+                            <input type="search" class="form-control search-bar" placeholder="Type to search...">
+                            <button class="close-search cursor" id="close-search-btn">&times;</button>
+                        </div>
+
+                        <!-- Search Icon -->
+                        <button class="header-search " id="search-icon-btn">
+                            <i class="fa-solid fa-magnifying-glass font-18"></i>
+                        </button>
+                    </div>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle d-flex align-items-center" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/icon/apple-logo.png" alt="Selected Icon" id="selected-icon"
+                                class="header-icon">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/android.png">
+                                    <img src="./assets/icon/android.png" alt="Android Icon" class="header-icon">
                                 </a>
                             </li>
-                            <li class="header-window-border p-2 mt-2">
-                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
-                                    <img src="./assets/icon/windows.png" alt="windows" class="header-icon header-icon-color">
-                                    <!-- <span>Windows</span>    -->
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/apple-logo.png">
+                                    <img src="./assets/icon/apple-logo.png" alt="Apple Icon" class="header-icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-icon="./assets/icon/windows.png">
+                                    <img src="./assets/icon/windows.png" alt="Windows Icon" class="header-icon">
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    
 
-                    <div class="search-input position-relative">
-                        <input type="search" class="text-white" placeholder="search app">
-                        <button class="position-absolute search-button"><i
-                                class="fa-solid fa-magnifying-glass font-18"></i></button>
-                    </div>
+                    <!-- Profile Menu -->
                     <div class="profile-manu">
                         <nav>
                             <div class="menu-toggle"></div>
                             <div class="profile">
-                                <div class="user">
-                                    <h3 class="">Katherine Cooper</h3>
+                                <div class="user d-none d-md-block">
+                                    <h3>Katherine Cooper</h3>
                                     <p class="m-0 pt-2 ">@probablykat66</p>
                                 </div>
                                 <div class="img-box">
@@ -67,12 +93,8 @@
                                 <ul class="p-0">
                                     <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
                                     <li><a href="SigIn.html"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign In</a></li>
-                                    <li class="ps-3">
-                                        <div class="toggle-btn active">
-                                            <input type="checkbox" id="theme-toggle" checked class="cb-value" />
-                                            <span class="round-btn"></span>
-                                        </div>
-                                    </li>
+                                    <li id="dark-mode-btn" class="theme-option">Dark Mode</li>
+                                    <li id="light-mode-btn" class="theme-option">Light Mode</li>
                                 </ul>
                             </div>
                         </nav>
@@ -83,7 +105,8 @@
     </header>
 
 
-    <main class="mt-5 main-padding-top">
+
+    <main class="main-padding-top">
         <div class="px-5 menu-screen">
             <div class="category-tab">
                 <div class="d-flex align-items-center gap-4">
@@ -150,14 +173,14 @@
                     </div>
 
 
-                    <ul class="nav nav-tabs border-0 gap-3" id="myTab" role="tablist">
-                        <li>
+                    <ul class="container nav nav-tabs border-0 gap-3" id="myTab" role="tablist">
+                        <!-- <li>
                             <a class="btn btn-primary d-flex align-items-center" data-bs-toggle="offcanvas"
                                 href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                 <i class="fa-solid fa-bars font-22 "></i>
                                 <span class="ps-2">More Category</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="Phone-tab" data-bs-toggle="tab" data-bs-target="#Phone"
                                 type="button" role="tab">
@@ -202,8 +225,6 @@
 
         <div class="px-5 pt-5 banner-section">
             <div class="slider-main gap-3 container">
-
-
                 <div class="slider-for w-75">
                     <div data-id="1">
                         <img class="image-shadow" src="./assets/Img/spotify.png" alt="Slide 4">
@@ -578,7 +599,7 @@
 
                 <div class="tab-pane fade" id="top-grossing">
                     <div class="col-12 d-flex gap-3 mb-3">
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width  rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (19).webp" alt="u1">
@@ -593,7 +614,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (20).webp" alt="u1">
@@ -608,7 +629,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (21).webp" alt="u1">
@@ -626,7 +647,7 @@
                     </div>
 
                     <div class="col-12 d-flex gap-3 mb-3">
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (22).webp" alt="u1">
@@ -641,7 +662,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (23).webp" alt="u1">
@@ -656,7 +677,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (24).webp" alt="u1">
@@ -674,7 +695,7 @@
                     </div>
 
                     <div class="col-12 d-flex gap-3">
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (25).webp" alt="u1">
@@ -689,7 +710,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (26).webp" alt="u1">
@@ -704,7 +725,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (27).webp" alt="u1">
@@ -724,7 +745,7 @@
 
                 <div class="tab-pane fade" id="top-paid">
                     <div class="col-12 d-flex gap-3 mb-3">
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (10).webp" alt="u1">
@@ -739,7 +760,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (11).webp" alt="u1">
@@ -754,7 +775,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (12).webp" alt="u1">
@@ -772,7 +793,7 @@
                     </div>
 
                     <div class="col-12 d-flex gap-3 mb-3">
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (13).webp" alt="u1">
@@ -787,7 +808,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (14).webp" alt="u1">
@@ -802,7 +823,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (15).webp" alt="u1">
@@ -820,7 +841,7 @@
                     </div>
 
                     <div class="col-12 d-flex gap-3">
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (16).webp" alt="u1">
@@ -835,7 +856,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (17).webp" alt="u1">
@@ -850,7 +871,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col d-flex p-2 app-wrap rounded">
+                        <div class="col d-flex p-2 app-wrap app-wrap-width rounded">
                             <a href="install-pages.html" class="d-flex">
                                 <div class="app-img">
                                     <img src="./assets/Img/chartImg/unnamed (18).webp" alt="u1">

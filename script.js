@@ -22,47 +22,86 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav-top, .slider-nav-bottom', 
+    asNavFor: '.slider-nav-top, .slider-nav-bottom',
     autoplay: true,
-    autoplaySpeed: 3000, 
+    autoplaySpeed: 3000,
   });
 
   $('.slider-nav').slick({
-    slidesToShow: 4, 
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
     infinite: false,
-    centerMode: false, 
+    centerMode: false,
     arrows: false,
     focusOnSelect: true,
-    autoplay: true, 
-    autoplaySpeed: 2500, 
+    autoplay: true,
+    autoplaySpeed: 2500,
   });
 });
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("theme-toggle");
   const body = document.body;
+  const darkModeBtn = document.getElementById("dark-mode-btn");
+  const lightModeBtn = document.getElementById("light-mode-btn");
 
-  // Load saved theme
   if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-mode");
+    setTheme("dark");
+  } else {
+    setTheme("light");
   }
 
-  toggleButton.addEventListener("click", function () {
-    body.classList.toggle("dark-mode");
+  darkModeBtn.addEventListener("click", function () {
+    setTheme("dark");
+  });
 
-    // Save the theme preference
-    if (body.classList.contains("dark-mode")) {
+  lightModeBtn.addEventListener("click", function () {
+    setTheme("light");
+  });
+
+  function setTheme(mode) {
+    if (mode === "dark") {
+      body.classList.add("dark-mode");
+      darkModeBtn.classList.add("active");
+      lightModeBtn.classList.remove("active");
       localStorage.setItem("theme", "dark");
     } else {
+      body.classList.remove("dark-mode");
+      lightModeBtn.classList.add("active");
+      darkModeBtn.classList.remove("active");
       localStorage.setItem("theme", "light");
     }
+  }
+});
+
+
+// window
+document.querySelectorAll('.dropdown-item').forEach(item => {
+  item.addEventListener('click', function (e) {
+      e.preventDefault();
+      const newIconPath = this.getAttribute('data-icon'); 
+      const selectedIcon = document.getElementById('selected-icon'); 
+      selectedIcon.src = newIconPath; 
+  });
+});
+
+
+// Serach 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchIconBtn = document.getElementById("search-icon-btn");
+  const searchInputBox = document.getElementById("search-input-box");
+  const closeSearchBtn = document.getElementById("close-search-btn");
+
+ 
+  searchIconBtn.addEventListener("click", function () {
+      searchInputBox.classList.remove("d-none"); 
+  });
+
+  closeSearchBtn.addEventListener("click", function () {
+      searchInputBox.classList.add("d-none");
   });
 });
 
@@ -70,43 +109,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const appSlider = document.getElementById("appSlider");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-
-prevBtn.addEventListener("click", () => {
-  appSlider.scrollBy({ left: -150, behavior: "smooth" });
-});
-
-nextBtn.addEventListener("click", () => {
-  appSlider.scrollBy({ left: 150, behavior: "smooth" });
-});
-
-
-
-const appSliderEdit = document.getElementById("appSliderEdit");
-const prevBtnEdit = document.getElementById("prevBtnEdit");
-const nextBtnEdit = document.getElementById("nextBtnEdit");
-
-prevBtnEdit.addEventListener("click", () => {
-  appSliderEdit.scrollBy({ left: -150, behavior: "smooth" });
-});
-
-nextBtnEdit.addEventListener("click", () => {
-  appSliderEdit.scrollBy({ left: 150, behavior: "smooth" });
-});
-
-
-const appSliderCommun = document.getElementById("appSliderCommun");
-const prevBtnCommun = document.getElementById("prevBtnCommun");
-const nextBtnCommun = document.getElementById("nextBtnCommun");
-
-prevBtnCommun.addEventListener("click", () => {
-  appSliderCommun.scrollBy({ left: -150, behavior: "smooth" });
-});
-
-nextBtnCommun.addEventListener("click", () => {
-  appSliderCommun.scrollBy({ left: 150, behavior: "smooth" });
-});
 
 

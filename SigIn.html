@@ -14,61 +14,47 @@
 
 <body>
 
-    <div class="px-3 signin-main-page-wrapper d-flex justify-content-center align-items-center">
-        <div class="signin-main-page rounded shadow">
-            <div class="sigin-wraper d-flex col-12">
-                <div
-                    class="d-none d-md-flex col-6 p-4 sign-in-left text-center text-white  flex-column justify-content-center align-items-center">
-                    <div class="mb-4">
-                        <img src="./assets/Img/logo-r.png" alt="logo" class="logo-img">
-                    </div>
-                    <h2 class="fw-bold pt-1">Hello, Welcome!</h2>
-                    <p class="pb-3 pt-2">
-                        Enter your personal details and start your journey with us.
-                    </p>
-                    <div class="py-2 px-4 text-center rounded-pill text-white register cursor">
-                            Register
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 p-4 sign-in-right d-flex flex-column justify-content-center text-center">
-                    <div class="my-4 d-block d-md-none">
-                        <img src="./assets/Img/logo-r.png" alt="logo" class="logo-img">
-                    </div>
-                    <h3 class="fw-bold pb-4">Login</h3>
-                    <form>
-                        <div class="mb-3 position-relative">
-                            <i class="fa-solid fa-envelope input-icon position-absolute"></i>
-                            <input type="email" class="p-2 ps-5 rounded form-control" placeholder="Email Address">
-                        </div>
-                        <div class="mb-3 position-relative">
-                            <i class="fa-solid fa-lock input-icon position-absolute"></i>
-                            <input type="password" class="p-2 ps-5 rounded form-control" placeholder="Password">
-                        </div>
-
-                        <div class="mb-3">
-                            <a href="#" class="text-decoration-none">Forgot Password?</a>
-                        </div>
-                        <button type="button" class="rounded btn btn-primary w-100"><a href="Index.html"
-                                class="text-white">Login</a></button>
-
-                        <p class="pt-2">or login with social platforms</p>
-                        <div class="d-flex gap-3 pt-1 justify-content-center">
-                            <span class="footer-nav-icon signin-nav-icon">
-                                <img src="./assets/icon/google.png" alt="" class="rounded">
-                            </span>
-                            <span class="footer-nav-icon signin-nav-icon">
-                                <img src="./assets/Img/chartImg/unnamed (20).webp" alt="" class="rounded">
-                            </span>
-                            <span class="footer-nav-icon signin-nav-icon">
-                                <img src="./assets/icon/github.png" alt="" class="rounded">
-                            </span>
-                            <span class="footer-nav-icon signin-nav-icon">
-                                <img src="./assets/Img/chartImg/unnamed (35).webp" alt="" class="rounded">
-                            </span>
-                        </div>
-                    </form>
-                </div>
+    <div class="signin-main-page-wrapper d-flex flex-wrap">
+        <!-- Left Section -->
+        <div class="background-animation d-none d-sm-flex col-sm-6 d-flex flex-column justify-content-center align-items-center text-white text-center sign-in-left">
+            <div class="particles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <h2 class="fw-bold">Hello, Welcome!</h2>
+            <p class="mt-3">Enter your personal details and start your journey with us.</p>
+            <button class="registre-btn rounded px-4 py-1 text-white">Register</button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-12 col-sm-6 p-4 d-flex flex-column justify-content-center align-items-center text-center sign-in-right">
+            <img src="./assets/Img/logo-r.png" alt="Logo" class="logo-img-register mb-4">
+            <h3 class="fw-bold mb-4">Login</h3>
+            <form class="w-75">
+                <div class="mb-3 position-relative">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" class="form-control ps-5" placeholder="Email Address">
+                </div>
+                <div class="mb-3 position-relative">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" class="form-control ps-5" placeholder="Password">
+                </div>
+                <a href="#" class="d-block text-decoration-none mb-3">Forgot Password?</a>
+                <div class="login-btn rounded py-2">login</div>
+                <p class="mt-3">Or login with</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <img src="./assets/Img/chartImg/unnamed (20).webp" alt="Google" class="social-icon rounded">
+                    <img src="./assets/Img/chartImg/unnamed (37).webp" alt="GitHub" class="social-icon rounded">
+                    <img src="./assets/icon/google.png" alt="Facebook" class="social-icon rounded">
+                    <img src="./assets/icon/github (1).png" alt="Facebook" class="social-icon rounded">
+
+                </div>
+            </form>
         </div>
     </div>
 

@@ -43,7 +43,10 @@
     }
 
     .header-logo img {
-        width: 50px;
+        width: 100px;
+    }
+    .install-logo img{
+        width: 140px !important;
     }
 
     .banner-section {
@@ -182,15 +185,34 @@
     .additional-under-content{
         padding-top: 10px;
     }
-    .sign-in-right{
-        background-color: #daeaf5;
-        height: 437px;
+    .wishlist-row{
+        padding: 0 10px;
+        padding-top: 0 !important;
     }
-    .sign-in-right img{
-        width: 200px;
+    .wishlist-tabs{
+        flex-direction: row !important;
+        border-bottom: 1px solid gray;
+        border-right: 0 ;
+        padding: 0 0 !important;
+        justify-content: space-between;
     }
-    .signin-nav-icon img{
-        width: 30px;
+    .wishlist-app{
+        padding-top: 50px;
+        justify-content: space-between;
+    }
+    .wishlist-tabs a{
+        font-size: 16px ;
+        margin-top: 10px;
+    }
+    .wishlist-section{
+        padding-top: 120px;
+    }
+    .social-icon{
+        width: 28px;
+        height: 28px;
+    }
+    .app-wrap-width{
+        width: 300px !important;
     }
 }
 
@@ -238,7 +260,7 @@
     }
 
     .header-logo img {
-        width: 80px;
+        width: 140px;
     }
 
     .top-app .tab-content {
@@ -330,15 +352,35 @@
     .footer-nav-link{
         padding-top: 35px;
     }
-    .sign-in-right{
-        background-color: #daeaf5;
-        height: 437px;
+
+    .wishlist-section{
+        padding-top: 130px;
     }
-    .sign-in-right img{
-        width: 200px;
+    .wishlist-row{
+        padding: 20px 10px !important;
     }
-    .signin-nav-icon img{
-        width: 30px;
+    .wishlist-tabs{
+        flex-direction: row !important;
+        border-bottom: 1px solid gray;
+        border-right: 0 ;
+        justify-content: space-between;
+    }
+    .wishlist-app{
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .wishlist-tabs a{
+        font-size: 16px ;
+    }
+    .background-animation{
+        padding: 0 10px;
+    }
+    .social-icon{
+        width: 32px;
+        height: 32px;
+    }
+    .app-wrap-width{
+        width: 380px !important;
     }
 }
 
@@ -461,7 +503,28 @@
     .About-App-Section {
         padding-top: 50px;
     }
-
+    .wishlist-section{
+        padding-top: 130px;
+    }
+    .wishlist-row{
+        padding-top: 20px !important;
+    }
+    .wishlist-tabs{
+        flex-direction: column !important;
+        border-right: 1px solid gray;
+        justify-content: space-around;
+    }
+    .wishlist-app{
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .wishlist-tabs a{
+        font-size: 16px ;
+    }
+    .wishlist-heading{
+        border-bottom: 1px solid rgb(232, 232, 232);
+    }
+    
 }
 
 
@@ -535,6 +598,9 @@
     .offcanvas.offcanvas-start {
         width: 310px;
     }
+    .wishlist-heading{
+        border-bottom: 1px solid rgb(232, 232, 232);
+    }
 }
 
 
@@ -554,6 +620,9 @@
 
     .carousel-inner {
         padding-top: 20px;
+    }
+    .wishlist-heading{
+        border-bottom: 1px solid rgb(232, 232, 232);
     }
 }
 
