@@ -107,7 +107,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+const appSliderPageApp = document.getElementById("appSlider");
+const prevBtnPageApp = document.getElementById("prevBtn");
+const nextBtnPageApp = document.getElementById("nextBtn");
+
+prevBtnPageApp.addEventListener("click", () => {
+  appSliderPageApp.scrollBy({ left: -150, behavior: "smooth" });
+});
+
+nextBtnPageApp.addEventListener("click", () => {
+  appSliderPageApp.scrollBy({ left: 150, behavior: "smooth" });
+});
 
 
+const appSliderEdit = document.getElementById("appSliderEdit");
+const prevBtnEdit = document.getElementById("prevBtnEdit");
+const nextBtnEdit = document.getElementById("nextBtnEdit");
+
+prevBtnEdit.addEventListener("click", () => {
+  appSliderEdit.scrollBy({ left: -150, behavior: "smooth" });
+});
+
+nextBtnEdit.addEventListener("click", () => {
+  appSliderEdit.scrollBy({ left: 150, behavior: "smooth" });
+});
+
+
+
+const appSliderCommunApp = document.getElementById("appSliderCommun");
+const prevBtnCommunApp = document.getElementById("prevBtnCommun");
+const nextBtnCommunApp = document.getElementById("nextBtnCommun");
+
+if (appSliderCommunApp && prevBtnCommunApp && nextBtnCommunApp) {
+    prevBtnCommunApp.addEventListener("click", () => {
+        appSliderCommunApp.scrollBy({ left: -150, behavior: "smooth" });
+    });
+
+    nextBtnCommunApp.addEventListener("click", () => {
+        appSliderCommunApp.scrollBy({ left: 150, behavior: "smooth" });
+    });
+} 
 
 

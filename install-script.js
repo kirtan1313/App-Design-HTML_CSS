@@ -126,13 +126,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Update the dropdown icon dynamically
+
   document.querySelectorAll('.dropdown-item').forEach(item => {
     item.addEventListener('click', function (e) {
       e.preventDefault();
-      const newIconPath = this.getAttribute('data-icon'); // Get new icon path
-      const selectedIcon = document.getElementById('selected-icon'); // Find selected icon element
-      selectedIcon.src = newIconPath; // Update the selected icon's src
+      const newIconPath = this.getAttribute('data-icon');
+      const selectedIcon = document.getElementById('selected-icon'); 
+      selectedIcon.src = newIconPath;
     });
   });
 
